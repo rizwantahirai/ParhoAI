@@ -95,7 +95,6 @@ export const INSTRUCTORS: Instructor[] = [
     exp: "9 years · Computer Vision & AI", prev: "HAZEN · RootBlock Labs · VSBLTY",
     edu: "University of Bradford, UK",
     bio: "Nine years building computer-vision and AI systems in production. Teaches the detection, tracking and edge-deployment modules — the parts most courses skip.",
-    photoPending: true,
   },
   {
     slug: "talha", name: "Talha", role: "Co-founder · Engineering",
@@ -104,7 +103,7 @@ export const INSTRUCTORS: Instructor[] = [
     prev: "BRICKandMORTAR.ai · Digital Division Pakistan · ZEREFLAB",
     edu: "GC University Faisalabad",
     bio: "Seven and a half years building and shipping software. Teaches the engineering discipline — structure, testing and code review — that separates a script from a system.",
-    linkedin: "https://www.linkedin.com/in/mtikram0/", photoPending: true,
+    linkedin: "https://www.linkedin.com/in/mtikram0/",
   },
   {
     slug: "hammad-hassan", name: "Hammad Hassan", role: "Integration & DevOps",
@@ -120,6 +119,6 @@ export const INSTRUCTORS: Instructor[] = [
     exp: "2 years · Full-stack engineering", prev: "DocNow EHR",
     edu: "BS Software Engineering, University of the Punjab",
     bio: "Builds the web and app platform. Teaches the FastAPI, interface and integration sessions — how a model reaches an actual user.",
-    linkedin: "https://www.linkedin.com/in/usamaikram19/", photoPending: true,
+    linkedin: "https://www.linkedin.com/in/usamaikram19/",
   },
 ];
