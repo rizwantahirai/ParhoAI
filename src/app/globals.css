@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { @apply bg-paper text-ink font-sans antialiased; }
+  ::selection { @apply bg-jade text-white; }
+  :focus-visible { @apply outline-none ring-2 ring-jade ring-offset-2 ring-offset-paper; }
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-content px-5 sm:px-6 lg:px-8; }
+  .eyebrow { @apply inline-flex items-center gap-3 font-mono text-[11px] font-semibold
+              uppercase tracking-[0.16em] text-jade-dark
+              before:block before:h-px before:w-8 before:bg-jade before:content-['']; }
+  .eyebrow-l { @apply inline-flex items-center gap-3 font-mono text-[11px] font-semibold
+                uppercase tracking-[0.16em] text-jade-bright
+                before:block before:h-px before:w-8 before:bg-jade-bright before:content-['']; }
+  .h1 { @apply font-serif font-semibold tracking-[-0.035em] leading-[0.98]
+         text-[2.75rem] sm:text-[4rem] lg:text-[5rem]; }
+  .h2 { @apply font-serif font-semibold tracking-[-0.028em] leading-[1.04]
+         text-[2.15rem] sm:text-[2.85rem] lg:text-[3.4rem]; }
+  .h3 { @apply font-serif font-semibold tracking-[-0.018em] text-[1.35rem] sm:text-[1.55rem]; }
+  .lede { @apply text-[1.125rem] sm:text-[1.3125rem] font-light leading-[1.6] text-slateink; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3.5
+          text-[15px] font-semibold transition-colors duration-150 whitespace-nowrap; }
+  .btn-primary { @apply btn bg-jade text-white hover:bg-jade-dark; }
+  .btn-bright { @apply btn bg-jade-bright text-ink hover:bg-white; }
+  .btn-ghost { @apply btn border border-line-strong text-ink hover:border-jade hover:text-jade; }
+  .btn-ghost-dark { @apply btn border border-white/25 text-white hover:border-jade-bright hover:text-jade-bright; }
+  .card { @apply rounded-xl border border-line bg-white p-6 sm:p-8; }
+  .lift { @apply transition-[transform,box-shadow,border-color] duration-200
+           hover:-translate-y-1 hover:border-jade/40 hover:shadow-[0_18px_44px_-24px_rgba(8,13,18,0.30)]; }
+  .sect { @apply py-24 sm:py-32; }
+  .rule { @apply border-t border-line; }
+}
