@@ -58,8 +58,9 @@ export default function Nav() {
         </button>
       </nav>
 
+      {/* Positioned against the header on purpose: the header's backdrop-blur would hijack a `fixed` child anyway. */}
       <div id="mobile-menu"
-        className={`fixed inset-x-0 bottom-0 top-[68px] z-40 flex-col overflow-y-auto border-t border-line bg-paper md:hidden ${open ? "flex" : "hidden"}`}>
+        className={`absolute inset-x-0 top-full z-40 h-[calc(100dvh-68px)] flex-col overflow-y-auto border-t border-line bg-paper md:hidden ${open ? "flex" : "hidden"}`}>
         <div className="wrap flex flex-col py-2">
           {LINKS.map(l => (
             <Link key={l.href} href={l.href} className="border-b border-line py-5">
