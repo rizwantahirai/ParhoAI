@@ -9,24 +9,28 @@
  * See SETUP-FORM.md for step-by-step instructions.
  */
 
+import { GOOGLE_FORM } from "@/data/formConfig";
+
 export type Provider = "google" | "formspree" | "none";
 
-export const PROVIDER = (process.env.NEXT_PUBLIC_FORM_PROVIDER || "none") as Provider;
+const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "";
+
+/** Env var wins; otherwise Google if formConfig.ts is filled in; otherwise Formspree; otherwise none. */
+export const PROVIDER = (process.env.NEXT_PUBLIC_FORM_PROVIDER
+  || (GOOGLE_FORM.id ? "google" : FORMSPREE_ID ? "formspree" : "none")) as Provider;
 
 /** Google Form: the long id from .../forms/d/e/<THIS>/viewform */
-const GOOGLE_FORM_ID = process.env.NEXT_PUBLIC_GOOGLE_FORM_ID || "";
+const GOOGLE_FORM_ID = process.env.NEXT_PUBLIC_GOOGLE_FORM_ID || GOOGLE_FORM.id;
 
 /** Google Form field ids, e.g. "entry.1234567890" */
 export const GOOGLE_FIELDS = {
-  name:       process.env.NEXT_PUBLIC_GF_NAME       || "",
-  email:      process.env.NEXT_PUBLIC_GF_EMAIL      || "",
-  program:    process.env.NEXT_PUBLIC_GF_PROGRAM    || "",
-  background: process.env.NEXT_PUBLIC_GF_BACKGROUND || "",
-  goal:       process.env.NEXT_PUBLIC_GF_GOAL       || "",
-  github:     process.env.NEXT_PUBLIC_GF_GITHUB     || "",
+  name:       process.env.NEXT_PUBLIC_GF_NAME       || GOOGLE_FORM.fields.name,
+  email:      process.env.NEXT_PUBLIC_GF_EMAIL      || GOOGLE_FORM.fields.email,
+  program:    process.env.NEXT_PUBLIC_GF_PROGRAM    || GOOGLE_FORM.fields.program,
+  background: process.env.NEXT_PUBLIC_GF_BACKGROUND || GOOGLE_FORM.fields.background,
+  goal:       process.env.NEXT_PUBLIC_GF_GOAL       || GOOGLE_FORM.fields.goal,
+  github:     process.env.NEXT_PUBLIC_GF_GITHUB     || GOOGLE_FORM.fields.github,
 };
-
-const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "";
 
 export const isConfigured =
   (PROVIDER === "google"    && !!GOOGLE_FORM_ID && !!GOOGLE_FIELDS.email) ||

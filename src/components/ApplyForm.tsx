@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
-import { submitApplication, isConfigured, PROVIDER, type Application } from "@/lib/form";
+import { useEffect, useRef, useState } from "react";
+import { submitApplication, isConfigured, type Application } from "@/lib/form";
 
 const PROGRAMS = [
   "Diploma — 8 months, from zero",
@@ -11,8 +11,44 @@ const PROGRAMS = [
 
 type State = "idle" | "sending" | "done" | "error";
 
+/** Draft is kept in this browser only, so a refresh or a closed tab on a phone does not lose the text. */
+const DRAFT_KEY = "parhoai.apply.draft.v1";
+const DRAFT_FIELDS = ["name", "email", "program", "background", "goal", "github"] as const;
+type Draft = Partial<Record<(typeof DRAFT_FIELDS)[number], string>>;
+
+function readDraft(): Draft {
+  try { return JSON.parse(localStorage.getItem(DRAFT_KEY) || "{}"); } catch { return {}; }
+}
+function writeDraft(d: Draft) {
+  try {
+    if (Object.values(d).some(v => v && v.trim())) localStorage.setItem(DRAFT_KEY, JSON.stringify(d));
+    else localStorage.removeItem(DRAFT_KEY);
+  } catch { /* private mode or storage blocked — the form still works, it just will not remember */ }
+}
+function clearDraft() { try { localStorage.removeItem(DRAFT_KEY); } catch {} }
+
 export default function ApplyForm() {
   const [state, setState] = useState<State>("idle");
+  const [restored, setRestored] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  // Restore a saved draft once the form is on screen.
+  useEffect(() => {
+    const form = formRef.current; if (!form) return;
+    const d = readDraft(); let any = false;
+    DRAFT_FIELDS.forEach(k => {
+      const el = form.elements.namedItem(k) as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement | null;
+      if (el && d[k]) { el.value = d[k]!; any = true; }
+    });
+    setRestored(any);
+  }, [state === "idle"]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  function saveDraft() {
+    const form = formRef.current; if (!form) return;
+    const fd = new FormData(form); const d: Draft = {};
+    DRAFT_FIELDS.forEach(k => { d[k] = String(fd.get(k) ?? ""); });
+    writeDraft(d);
+  }
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -28,6 +64,7 @@ export default function ApplyForm() {
     setState("sending");
     try {
       await submitApplication(app);
+      clearDraft();
       setState("done");
     } catch {
       setState("error");
@@ -53,7 +90,17 @@ export default function ApplyForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-6" noValidate={false}>
+    <form ref={formRef} onSubmit={onSubmit} onInput={saveDraft} onChange={saveDraft} className="space-y-6" noValidate={false}>
+      {restored && (
+        <p className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-line bg-paper-100 px-4 py-2.5 text-sm text-slateink" role="status">
+          <span>We kept what you typed last time.</span>
+          <button type="button" className="font-semibold text-jade underline underline-offset-2"
+            onClick={() => { clearDraft(); formRef.current?.reset(); setRestored(false); }}>
+            Start fresh
+          </button>
+        </p>
+      )}
+
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
           <label className={label} htmlFor="name">Full name</label>
@@ -111,11 +158,10 @@ export default function ApplyForm() {
       )}
 
       {!isConfigured && (
+        /* Shown until src/data/formConfig.ts has a Google Form id — see SETUP-FORM.md. */
         <p className="rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-900">
-          <strong>Form not connected yet.</strong> Set <code className="font-mono">NEXT_PUBLIC_FORM_PROVIDER</code>{" "}
-          and the matching keys in <code className="font-mono">.env.local</code> — see{" "}
-          <code className="font-mono">SETUP-FORM.md</code>. This notice only appears until it is configured.
-          {PROVIDER !== "none" && <> Current provider: <code className="font-mono">{PROVIDER}</code>.</>}
+          <strong>Applications open shortly.</strong> The form is not taking submissions yet — message us on
+          WhatsApp in the meantime and we will get straight back to you.
         </p>
       )}
     </form>
