@@ -26,6 +26,7 @@ const GOOGLE_FORM_ID = process.env.NEXT_PUBLIC_GOOGLE_FORM_ID || GOOGLE_FORM.id;
 export const GOOGLE_FIELDS = {
   name:       process.env.NEXT_PUBLIC_GF_NAME       || GOOGLE_FORM.fields.name,
   email:      process.env.NEXT_PUBLIC_GF_EMAIL      || GOOGLE_FORM.fields.email,
+  phone:      process.env.NEXT_PUBLIC_GF_PHONE      || GOOGLE_FORM.fields.phone,
   program:    process.env.NEXT_PUBLIC_GF_PROGRAM    || GOOGLE_FORM.fields.program,
   background: process.env.NEXT_PUBLIC_GF_BACKGROUND || GOOGLE_FORM.fields.background,
   goal:       process.env.NEXT_PUBLIC_GF_GOAL       || GOOGLE_FORM.fields.goal,
@@ -37,7 +38,7 @@ export const isConfigured =
   (PROVIDER === "formspree" && !!FORMSPREE_ID);
 
 export type Application = {
-  name: string; email: string; program: string;
+  name: string; email: string; phone: string; program: string;
   background: string; goal: string; github: string;
 };
 

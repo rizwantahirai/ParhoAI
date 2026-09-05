@@ -13,7 +13,7 @@ type State = "idle" | "sending" | "done" | "error";
 
 /** Draft is kept in this browser only, so a refresh or a closed tab on a phone does not lose the text. */
 const DRAFT_KEY = "parhoai.apply.draft.v1";
-const DRAFT_FIELDS = ["name", "email", "program", "background", "goal", "github"] as const;
+const DRAFT_FIELDS = ["name", "email", "phone", "program", "background", "goal", "github"] as const;
 type Draft = Partial<Record<(typeof DRAFT_FIELDS)[number], string>>;
 
 function readDraft(): Draft {
@@ -57,7 +57,7 @@ export default function ApplyForm() {
     if (get("company")) return;               // honeypot — bots fill it, humans never see it
 
     const app: Application = {
-      name: get("name"), email: get("email"), program: get("program"),
+      name: get("name"), email: get("email"), phone: get("phone"), program: get("program"),
       background: get("background"), goal: get("goal"), github: get("github"),
     };
 
@@ -110,6 +110,13 @@ export default function ApplyForm() {
           <label className={label} htmlFor="email">Email</label>
           <input id="email" name="email" type="email" required autoComplete="email" className={field} placeholder="you@example.com" />
         </div>
+      </div>
+
+      <div>
+        <label className={label} htmlFor="phone">
+          WhatsApp number <span className="normal-case tracking-normal text-slateink-light">(with country code)</span>
+        </label>
+        <input id="phone" name="phone" type="tel" required autoComplete="tel" inputMode="tel" className={field} placeholder="+92 3xx xxxxxxx" />
       </div>
 
       <div>

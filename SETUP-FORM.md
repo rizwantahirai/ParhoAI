@@ -24,6 +24,7 @@ Add six questions **in this order**, with these exact types:
 | 4 | Your background | Paragraph | Yes |
 | 5 | What do you want to build? | Paragraph | Yes |
 | 6 | GitHub or portfolio | Short answer | No |
+| 7 | WhatsApp number | Short answer | Yes |
 
 > Use **Short answer** for "Which program", not multiple choice. Google rejects
 > multiple-choice submissions whose value does not match an option exactly.
