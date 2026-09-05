@@ -28,7 +28,7 @@ export function DownloadNote({ slug, what }: { slug: Download["slug"]; what: str
       <a href={d.file} target="_blank" rel="noopener" className="font-semibold text-jade underline underline-offset-2">
         Download the PDF
       </a>{" "}
-      <span className="text-slateink-light">({d.pages} pages, {d.size}).</span>
+      <span className="text-slateink-light">({d.pages} pages).</span>
     </p>
   );
 }
