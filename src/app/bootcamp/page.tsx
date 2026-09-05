@@ -1,5 +1,7 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import PageHead from "@/components/PageHead";
+import { DownloadButton, DownloadNote } from "@/components/DownloadPdf";
 import ModuleList, { Mod } from "@/components/ModuleList";
 import CtaBand from "@/components/CtaBand";
 
@@ -38,7 +40,11 @@ export default function Bootcamp() {
     <>
       <PageHead kicker="3 months · you already code" title="AI Engineering Bootcamp"
         lede="A conversion course, not an introduction. Fifty-two sessions from your first production-grade model to a deployed agentic system."
-        meta={[{k:"Duration",v:"3 months"},{k:"Sessions",v:"52"},{k:"Contact hours",v:"78"},{k:"Modules",v:"6"},{k:"Projects",v:"5 + 1"}]} />
+        meta={[{k:"Duration",v:"3 months"},{k:"Sessions",v:"52"},{k:"Contact hours",v:"78"},{k:"Modules",v:"6"},{k:"Projects",v:"5 + 1"}]}
+        actions={<>
+          <Link href="/apply" className="btn-bright">Apply for the next cohort</Link>
+          <DownloadButton slug="bootcamp" />
+        </>} />
 
       <section className="py-20 sm:py-28">
         <div className="wrap">
@@ -67,6 +73,7 @@ export default function Bootcamp() {
           <p className="eyebrow">The curriculum</p>
           <h2 className="h2 mt-3 max-w-[24ch]">Six modules. Each opens with what it will not teach you.</h2>
           <ModuleList mods={MODS} />
+          <DownloadNote slug="bootcamp" what="Full session-by-session outline, all 52 sessions, with prerequisites for each module." />
         </div>
       </section>
       <CtaBand />

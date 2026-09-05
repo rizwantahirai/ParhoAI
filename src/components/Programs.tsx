@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PROGRAMS } from "@/data/programs";
+import { DownloadRow } from "./DownloadPdf";
 
 export default function Programs() {
   return (
@@ -46,6 +47,7 @@ export default function Programs() {
             </article>
           ))}
         </div>
+        <DownloadRow />
       </div>
     </section>
   );

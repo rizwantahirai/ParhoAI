@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHead from "@/components/PageHead";
+import { DownloadButton, DownloadNote } from "@/components/DownloadPdf";
 import ModuleList, { Mod } from "@/components/ModuleList";
 import CtaBand from "@/components/CtaBand";
 
@@ -38,7 +39,11 @@ export default function Diploma() {
     <>
       <PageHead kicker="8 months · start from zero" title="Applied AI Engineering Diploma"
         lede="No computer science background required. One hundred and forty sessions from the terminal to a deployed agentic system, with nine projects and a capstone along the way."
-        meta={[{k:"Duration",v:"8 months"},{k:"Sessions",v:"140"},{k:"Contact hours",v:"210"},{k:"Modules",v:"10"},{k:"Projects",v:"9 + 1"}]} />
+        meta={[{k:"Duration",v:"8 months"},{k:"Sessions",v:"140"},{k:"Contact hours",v:"210"},{k:"Modules",v:"10"},{k:"Projects",v:"9 + 1"}]}
+        actions={<>
+          <Link href="/apply" className="btn-bright">Apply for the next cohort</Link>
+          <DownloadButton slug="diploma" />
+        </>} />
 
       <section className="py-20 sm:py-28">
         <div className="wrap grid gap-8 lg:grid-cols-3">
@@ -60,10 +65,7 @@ export default function Diploma() {
           <p className="eyebrow">The curriculum</p>
           <h2 className="h2 mt-3 max-w-[22ch]">Ten modules. Each one ends in something you shipped.</h2>
           <ModuleList mods={MODS} />
-          <p className="mt-8 text-sm text-slateink">
-            Full session-by-session outline, all 140 sessions, is available as a PDF —{" "}
-            <Link href="/apply" className="font-semibold text-jade underline underline-offset-2">request it with your application</Link>.
-          </p>
+          <DownloadNote slug="diploma" what="Full session-by-session outline, all 140 sessions, with every project brief." />
         </div>
       </section>
       <CtaBand />

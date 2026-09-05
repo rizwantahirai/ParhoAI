@@ -122,3 +122,11 @@ export const INSTRUCTORS: Instructor[] = [
     linkedin: "https://www.linkedin.com/in/usamaikram19/",
   },
 ];
+
+export type Download = { slug: "diploma" | "bootcamp" | "sprints"; label: string; file: string; pages: number; size: string };
+/** Curriculum PDFs served from /public/downloads. Keep in sync with parhoai/curriculum. */
+export const DOWNLOADS: Download[] = [
+  { slug: "diploma",  label: "Diploma outline",  file: "/downloads/ParhoAI-Diploma-Outline.pdf",  pages: 23, size: "1.0 MB" },
+  { slug: "bootcamp", label: "Bootcamp outline", file: "/downloads/ParhoAI-Bootcamp-Outline.pdf", pages: 16, size: "0.9 MB" },
+  { slug: "sprints",  label: "Sprints catalogue", file: "/downloads/ParhoAI-Sprints.pdf",          pages: 16, size: "0.8 MB" },
+];
