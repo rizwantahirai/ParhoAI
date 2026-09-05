@@ -13,12 +13,13 @@ const SITE = "https://parhoai.org";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
+  alternates: { canonical: "./" },
   title: { default: "ParhoAI — Learn AI by building things that run", template: "%s · ParhoAI" },
   description:
     "Live AI engineering cohorts taught in Urdu and English. An eight-month diploma from zero computer science, a three-month bootcamp for working engineers, and seven focused sprints.",
   keywords: ["AI course Pakistan","machine learning bootcamp Lahore","AI engineering diploma","computer vision course","LLM course Urdu","MLOps training"],
   openGraph: {
-    type: "website", url: SITE, siteName: "ParhoAI",
+    type: "website", url: "./", siteName: "ParhoAI",
     title: "ParhoAI — Learn AI by building things that run",
     description: "Live AI engineering cohorts in Urdu and English. Projects on your GitHub, not certificates on your wall.",
   },

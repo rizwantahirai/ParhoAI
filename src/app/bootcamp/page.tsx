@@ -6,6 +6,7 @@ import CtaBand from "@/components/CtaBand";
 export const metadata: Metadata = {
   title: "AI Engineering Bootcamp — 3 months for working engineers",
   description: "A three-month, 52-session conversion course for engineers who already program. Production ML, deep learning, computer vision, NLP, agentic AI and MLOps.",
+  openGraph: { url: "/bootcamp", title: "AI Engineering Bootcamp — 3 months for working engineers", description: "A three-month, 52-session conversion course for engineers who already program. Production ML, deep learning, computer vision, NLP, agentic AI and MLOps." },
 };
 
 const MODS: Mod[] = [

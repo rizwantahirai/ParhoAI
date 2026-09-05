@@ -6,6 +6,7 @@ import { WA_LINK, WA_DISPLAY, WaIcon } from "@/components/WhatsApp";
 export const metadata: Metadata = {
   title: "Apply",
   description: "Apply for the next ParhoAI cohort — diploma, bootcamp or a single sprint. Ten minutes, and we reply within three working days.",
+  openGraph: { url: "/apply", title: "Apply", description: "Apply for the next ParhoAI cohort — diploma, bootcamp or a single sprint. Ten minutes, and we reply within three working days." },
 };
 
 export default function Apply() {

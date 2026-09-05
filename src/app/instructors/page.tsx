@@ -7,6 +7,7 @@ import { INSTRUCTORS } from "@/data/programs";
 export const metadata: Metadata = {
   title: "Instructors",
   description: "The engineers who teach at ParhoAI — thirty-three years of shipped computer vision, machine learning and production systems between them.",
+  openGraph: { url: "/instructors", title: "Instructors", description: "The engineers who teach at ParhoAI — thirty-three years of shipped computer vision, machine learning and production systems between them." },
 };
 
 export default function Instructors() {

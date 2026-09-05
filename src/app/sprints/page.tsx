@@ -5,6 +5,7 @@ import CtaBand from "@/components/CtaBand";
 export const metadata: Metadata = {
   title: "Sprints — short, focused AI courses for engineers",
   description: "Seven short courses: Production ML, PyTorch, Computer Vision, NLP, RAG, AI Agents and MLOps. Three to five weeks each, one project each.",
+  openGraph: { url: "/sprints", title: "Sprints — short, focused AI courses for engineers", description: "Seven short courses: Production ML, PyTorch, Computer Vision, NLP, RAG, AI Agents and MLOps. Three to five weeks each, one project each." },
 };
 
 const S = [
