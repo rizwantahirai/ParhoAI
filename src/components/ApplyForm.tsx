@@ -106,7 +106,7 @@ export default function ApplyForm() {
       {state === "error" && (
         <p role="alert" className="rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-800">
           That did not go through. Please email the details to{" "}
-          <a href="mailto:hello@parhoai.com" className="font-semibold underline">hello@parhoai.com</a> instead.
+          <a href="mailto:hello@parhoai.org" className="font-semibold underline">hello@parhoai.org</a> instead.
         </p>
       )}
 

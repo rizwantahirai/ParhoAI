@@ -9,7 +9,7 @@ const serif = Newsreader({ subsets: ["latin"], weight: ["400","500","600","700"]
 const sans  = Source_Sans_3({ subsets: ["latin"], weight: ["300","400","500","600","700"], variable: "--font-sans", display: "swap" });
 const mono  = JetBrains_Mono({ subsets: ["latin"], weight: ["400","500","700"], variable: "--font-mono", display: "swap" });
 
-const SITE = "https://parhoai.com";
+const SITE = "https://parhoai.org";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),

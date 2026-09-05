@@ -27,11 +27,11 @@ vercel.com → Add New → Project → import the repo. Next.js is detected auto
 no build settings to change. First deploy gives you `parhoai-web.vercel.app`.
 
 **3. Add the domain in Vercel**
-Project → Settings → Domains → add `parhoai.com` **and** `www.parhoai.com`.
+Project → Settings → Domains → add `parhoai.org` **and** `www.parhoai.org`.
 Vercel will show the DNS records it wants.
 
 **4. Point Hostinger's DNS at Vercel**
-Hostinger → Domains → parhoai.com → DNS / Nameservers → **DNS Zone**:
+Hostinger → Domains → parhoai.org → DNS / Nameservers → **DNS Zone**:
 
 | Type | Name | Value | TTL |
 |---|---|---|---|
@@ -46,7 +46,7 @@ Propagation is usually minutes, up to 24 hours. Vercel issues the SSL certificat
 once records resolve — do not buy an SSL certificate from Hostinger.
 
 **5. Confirm**
-`https://parhoai.com` and `https://www.parhoai.com` both load and both show a padlock.
+`https://parhoai.org` and `https://www.parhoai.org` both load and both show a padlock.
 Set the canonical redirect (www → apex, or the reverse) in Vercel → Domains.
 
 ---
@@ -94,5 +94,5 @@ one column; the sprint table reflows to stacked rows. Test at 360px, 768px and 1
 - [ ] Add the teaching team section with real photos
 - [ ] Add pricing, or a clear "request pricing" path
 - [ ] Set up Vercel Analytics or Plausible
-- [ ] Add Google Search Console and submit `parhoai.com/sitemap.xml`
+- [ ] Add Google Search Console and submit `parhoai.org/sitemap.xml`
 - [ ] Decide on the canonical: apex or www

@@ -30,13 +30,13 @@ export default function Footer() {
                 <WaIcon size={15} /> {WA_DISPLAY}
               </a>
             </li>
-            <li><a href="mailto:hello@parhoai.com" className="hover:text-jade-bright">hello@parhoai.com</a></li>
+            <li><a href="mailto:hello@parhoai.org" className="hover:text-jade-bright">hello@parhoai.org</a></li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/10">
         <div className="wrap flex flex-col gap-2 py-6 font-mono text-[11px] uppercase tracking-[0.12em] text-white/40 sm:flex-row sm:justify-between">
-          <span>ParhoAI · parhoai.com</span>
+          <span>ParhoAI · parhoai.org</span>
           <span>© {new Date().getFullYear()}</span>
         </div>
       </div>

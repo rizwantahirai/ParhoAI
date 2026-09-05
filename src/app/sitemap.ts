@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://parhoai.com";
+  const base = "https://parhoai.org";
   const now = new Date();
   return ["", "/diploma", "/bootcamp", "/sprints", "/instructors", "/apply"].map(p => ({
     url: `${base}${p}`, lastModified: now,
