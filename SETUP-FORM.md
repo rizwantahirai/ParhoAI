@@ -21,7 +21,7 @@ Add six questions **in this order**, with these exact types:
 | 1 | Full name | Short answer | Yes |
 | 2 | Email | Short answer | Yes |
 | 3 | Which program | Short answer | Yes |
-| 4 | Where are you now? | Paragraph | Yes |
+| 4 | Your background | Paragraph | Yes |
 | 5 | What do you want to build? | Paragraph | Yes |
 | 6 | GitHub or portfolio | Short answer | No |
 

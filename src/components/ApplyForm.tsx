@@ -121,9 +121,9 @@ export default function ApplyForm() {
       </div>
 
       <div>
-        <label className={label} htmlFor="background">Where are you now?</label>
+        <label className={label} htmlFor="background">Your background</label>
         <textarea id="background" name="background" rows={4} required className={field}
-          placeholder="What you do, what you have built, what you can already code. Be honest — it helps us place you correctly." />
+          placeholder="What you do today, what you have built, and how much you can already code. Be honest — it helps us place you in the right program." />
       </div>
 
       <div>
