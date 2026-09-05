@@ -70,7 +70,7 @@ export default function Nav() {
           ))}
           <Link href="/#faq" className="border-b border-line py-5 font-serif text-2xl font-semibold">FAQ</Link>
         </div>
-        <div className="wrap mt-auto py-6">
+        <div className="wrap py-6">
           <Link href="/apply" className="btn-primary w-full">Apply</Link>
         </div>
       </div>

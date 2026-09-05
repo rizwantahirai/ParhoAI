@@ -14,7 +14,7 @@ export function DownloadButton({ slug, dark = true }: { slug: Download["slug"]; 
   return (
     <a href={d.file} target="_blank" rel="noopener" className={dark ? "btn-ghost-dark" : "btn-ghost"} data-download={d.slug}>
       <Icon />
-      <span>Download the outline <span className="opacity-60">· PDF, {d.pages} pages</span></span>
+      <span>Download the outline <span className="opacity-60">· PDF · {d.pages} pages</span></span>
     </a>
   );
 }
