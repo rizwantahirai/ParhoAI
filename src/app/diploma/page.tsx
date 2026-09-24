@@ -7,8 +7,8 @@ import CtaBand from "@/components/CtaBand";
 
 export const metadata: Metadata = {
   title: "Applied AI Engineering Diploma — 8 months from zero",
-  description: "An eight-month, 140-session diploma taking you from no computer science background to a shipping AI engineer. Live cohorts in Urdu and English, nine projects and a deployed capstone.",
-  openGraph: { url: "/diploma", title: "Applied AI Engineering Diploma — 8 months from zero", description: "An eight-month, 140-session diploma taking you from no computer science background to a shipping AI engineer. Live cohorts in Urdu and English, nine projects and a deployed capstone." },
+  description: "An eight-month, 140-session diploma taking you from no computer science background to a shipping AI engineer. Taught in Urdu and English, nine projects and a deployed capstone.",
+  openGraph: { url: "/diploma", title: "Applied AI Engineering Diploma — 8 months from zero", description: "An eight-month, 140-session diploma taking you from no computer science background to a shipping AI engineer. Taught in Urdu and English, nine projects and a deployed capstone." },
 };
 
 const MODS: Mod[] = [

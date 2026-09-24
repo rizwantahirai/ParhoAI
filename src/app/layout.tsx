@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "./" },
   title: { default: "ParhoAI — Learn AI by building things that run", template: "%s · ParhoAI" },
   description:
-    "Live AI engineering cohorts taught in Urdu and English. An eight-month diploma from zero computer science, a three-month bootcamp for working engineers, and seven focused sprints.",
-  keywords: ["AI course Pakistan","machine learning bootcamp Lahore","AI engineering diploma","computer vision course","LLM course Urdu","MLOps training"],
+    "Applied AI engineering programs taught in Urdu and English: an eight-month diploma from zero computer science, a three-month bootcamp for working engineers, and seven focused sprints across computer vision, NLP, LLMs, agents and MLOps.",
+  keywords: ["AI course Pakistan","machine learning bootcamp Pakistan","AI engineering diploma","computer vision course","LLM course Urdu","MLOps training"],
   openGraph: {
     type: "website", url: "./", siteName: "ParhoAI",
     title: "ParhoAI — Learn AI by building things that run",
-    description: "Live AI engineering cohorts in Urdu and English. Projects on your GitHub, not certificates on your wall.",
+    description: "Applied AI engineering in Urdu and English. Projects on your GitHub, not certificates on your wall.",
   },
   twitter: { card: "summary_large_image", title: "ParhoAI", description: "Learn AI by building things that run." },
   robots: { index: true, follow: true },

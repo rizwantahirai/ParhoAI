@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="lg:col-span-2">
           <Logo light />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
-            Live AI engineering cohorts. Taught in Urdu and English, built in English, assessed on what you ship.
+            Applied AI engineering programs. Taught in Urdu and English, built in English, assessed on what you ship.
           </p>
         </div>
         <div>

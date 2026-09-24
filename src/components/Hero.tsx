@@ -13,12 +13,12 @@ export default function Hero() {
       <div aria-hidden className="pointer-events-none absolute -right-40 -top-40 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle,rgba(0,214,166,0.18),transparent_68%)]" />
       <div aria-hidden className="pointer-events-none absolute -bottom-56 left-1/4 h-[440px] w-[440px] rounded-full bg-[radial-gradient(circle,rgba(10,110,92,0.34),transparent_70%)]" />
       <div className="wrap relative">
-        <p className="eyebrow-l animate-rise">Live cohorts · Lahore and online</p>
+        <p className="eyebrow-l animate-rise">Applied AI engineering · Urdu and English</p>
         <h1 className="h1 mt-7 max-w-[15ch] animate-rise text-white [animation-delay:60ms]">
           Learn AI by building things that <em className="not-italic text-jade-bright">run</em>.
         </h1>
         <p className="lede mt-6 max-w-[52ch] animate-rise text-white/70 [animation-delay:120ms]">
-          Not tutorials. Live cohorts where every module ends in a project that ships to
+          Not tutorials. Programs where every module ends in a project that ships to
           your GitHub — from zero computer science, or in three months if you already code.
         </p>
         <div className="mt-11 flex animate-rise flex-col gap-3 sm:flex-row [animation-delay:180ms]">
