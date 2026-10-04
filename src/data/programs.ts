@@ -66,6 +66,7 @@ export const BUILDS = [
 ];
 
 export const FAQS = [
+  { q: "Is it online?", a: "Yes. Every program is taught online, so you can join from anywhere in Pakistan or abroad. You need a laptop and a stable internet connection; the GPU work runs in the cloud, so you do not need an expensive machine." },
   { q: "Do I need a computer science degree?", a: "No. The eight-month diploma starts at the terminal and assumes nothing. The three-month bootcamp does assume you already program — entry is assessed, and if you are not there yet we will tell you and point you at the diploma." },
   { q: "What language are classes taught in?", a: "Urdu and English, mixed the way engineers in Pakistan actually work. Explanation and discussion happen in whichever makes the idea land fastest. All material, code, documentation and assignments are in English, because that is the language the job is in — and every technical term is taught in English from day one." },
   { q: "How much time does this take outside class?", a: "Six to eight hours a week for the diploma, eight to ten for the bootcamp. This is not optional. A student who does only the contact hours will finish the course and struggle in interviews — we say this before you enrol, not after." },
