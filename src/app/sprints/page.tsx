@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHead from "@/components/PageHead";
+import PriceTag from "@/components/PriceTag";
 import { DownloadButton, DownloadNote } from "@/components/DownloadPdf";
 import CtaBand from "@/components/CtaBand";
 
@@ -46,6 +47,7 @@ export default function Sprints() {
     <>
       <PageHead kicker="3–5 weeks · one subject" title="Sprints"
         lede="Short, focused courses for working engineers. Take the one you need, not the eight months around it. Together the seven are the three-month bootcamp."
+        price={<PriceTag program="sprints" dark note />}
         meta={[{k:"Sprints",v:"7"},{k:"Hours each",v:"9–15"},{k:"Weeks each",v:"3–5"},{k:"Projects",v:"1 each"}]}
         actions={<>
           <Link href="/apply" className="btn-bright">Apply for the next cohort</Link>
@@ -73,7 +75,7 @@ OPS              needs a trained model of your own, from anywhere`}</pre>
                     <p className="mt-1 font-serif text-[15px] italic text-slateink">{sp.tag}</p>
                   </div>
                   <div className="flex gap-4 font-mono text-xs uppercase tracking-[0.08em] text-slateink-light sm:flex-col sm:gap-1 sm:text-right">
-                    <span>{sp.s}</span><span>{sp.h}</span><span>{sp.w}</span>
+                    <span>{sp.s}</span><span>{sp.h}</span><span>{sp.w}</span><span className="font-semibold text-jade">PKR 3,500 <s className="font-normal text-slateink-faint">5,000</s></span>
                   </div>
                 </div>
                 <div className="grid gap-6 px-6 py-6 sm:px-7 lg:grid-cols-2">

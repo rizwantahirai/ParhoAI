@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHead from "@/components/PageHead";
+import PriceTag from "@/components/PriceTag";
 import { DownloadButton, DownloadNote } from "@/components/DownloadPdf";
 import ModuleList, { Mod } from "@/components/ModuleList";
 import CtaBand from "@/components/CtaBand";
@@ -39,6 +40,7 @@ export default function Diploma() {
     <>
       <PageHead kicker="8 months · start from zero" title="Applied AI Engineering Diploma"
         lede="No computer science background required. One hundred and forty sessions from the terminal to a deployed agentic system, with nine projects and a capstone along the way."
+        price={<PriceTag program="diploma" dark note />}
         meta={[{k:"Duration",v:"8 months"},{k:"Sessions",v:"140"},{k:"Contact hours",v:"210"},{k:"Modules",v:"10"},{k:"Projects",v:"9 + 1"}]}
         actions={<>
           <Link href="/apply" className="btn-bright">Apply for the next cohort</Link>

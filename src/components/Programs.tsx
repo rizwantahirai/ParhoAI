@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PriceTag from "./PriceTag";
 import { PROGRAMS } from "@/data/programs";
 import { DownloadRow } from "./DownloadPdf";
 
@@ -27,6 +28,7 @@ export default function Programs() {
                 <span>{p.sessions}</span>
                 <span>{p.hours}</span>
               </div>
+              <div className="mt-4"><PriceTag program={p.slug as "diploma" | "bootcamp" | "sprints"} /></div>
 
               <ul className="mt-5 space-y-3">
                 {p.bullets.map(b => (
