@@ -1,0 +1,179 @@
+{
+ "level": 40,
+ "of": 50,
+ "title": "sorted() with key",
+ "next": "Recursion",
+ "keywords": [
+  "sorted",
+  "key",
+  "len",
+  "lambda"
+ ],
+ "cover": {
+  "emoji": "🍛",
+  "big": "sorted key",
+  "sub": "sort anything your way"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "Which food stall is cheapest? Biryani, nihari, or haleem?",
+   "cap": "Which food stall is cheapest? Biryani, nihari, or haleem?",
+   "mood": "confused",
+   "scene": {
+    "type": "hook",
+    "emoji": "🍛",
+    "banner": "FOOD STREET",
+    "bannerColor": "coral"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Let Python sort it! And you choose what to sort by, with key!",
+   "cap": "Let Python sort it! And YOU choose what to sort by, with key!",
+   "with": {
+    "word": "key"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level forty! Sorted, with key!",
+   "cap": "Level 40! sorted() with key!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "sorted()",
+     "key="
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Normally sorted goes A to Z. With key equals len, shortest name first!",
+   "cap": "Normally sorted goes A to Z. With key=len, shortest name first!",
+   "scene": {
+    "type": "code",
+    "file": "names.py",
+    "code": [
+     "names = [\"Zara\", \"Ali\", \"Fatima\"]",
+     "print(sorted(names, key=len))"
+    ],
+    "out": "['Ali', 'Zara', 'Fatima']"
+   }
+  },
+  {
+   "who": "student",
+   "say": "So what exactly does key do?",
+   "cap": "So what exactly does key do?",
+   "with": {
+    "marks": [
+     {
+      "line": 1,
+      "from": 20,
+      "to": 27,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Key says what to compare! Here, the length of each name.",
+   "cap": "key says WHAT to compare! Here, the length of each name.",
+   "with": {
+    "marks": [
+     {
+      "line": 1,
+      "from": 20,
+      "to": 27,
+      "label": "← compare by length"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Key plus lambda? Sort the stalls by price. Haleem wins!",
+   "cap": "key + lambda? Sort the stalls by price. Haleem wins!",
+   "scene": {
+    "type": "code",
+    "file": "food.py",
+    "code": [
+     "food = [(\"biryani\", 350),",
+     "        (\"nihari\", 500),",
+     "        (\"haleem\", 250)]",
+     "cheap = sorted(food,",
+     "    key=lambda f: f[1])",
+     "print(cheap[0])"
+    ],
+    "marks": [
+     {
+      "line": 4,
+      "from": 18,
+      "to": 22,
+      "label": "← price"
+     }
+    ],
+    "out": "('haleem', 250)"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "f = [\"kela\", \"anaar\", \"seb\"]",
+     "print(sorted(f, key=len)[0])"
+    ],
+    "options": [
+     "anaar",
+     "seb",
+     "kela"
+    ],
+    "answer": 1,
+    "glow": [
+     1
+    ],
+    "tags": [
+     {
+      "line": 0,
+      "text": "4, 5, 3 letters",
+      "color": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Seb!",
+   "cap": "seb!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Key is length, and seb has only three letters!",
+   "cap": "Yes! key is length, and seb has only 3 letters!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level forty one, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 41 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "level": 22,
+ "of": 50,
+ "title": "Lists",
+ "next": "List methods",
+ "keywords": [
+  "[0]",
+  "[1]",
+  "len",
+  "len()",
+  "list",
+  "print"
+ ],
+ "cover": {
+  "emoji": "🛒",
+  "big": "list",
+  "sub": "explained with a bazaar list"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "Ammi's bazaar list! Aloo, pyaz, and I'll forget the rest!",
+   "cap": "Ammi's bazaar list! Aloo, pyaz, and I'll forget the rest!",
+   "mood": "confused",
+   "scene": {
+    "type": "hook",
+    "emoji": "🛒",
+    "banner": "SABZI BAZAAR",
+    "bannerColor": "jade"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Many items, one variable! That's a list!",
+   "cap": "Many items, ONE variable! That's a list!",
+   "with": {
+    "emoji": "📋",
+    "banner": "ONE LIST",
+    "bannerColor": "gold",
+    "word": "list"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level twenty two! Lists!",
+   "cap": "Level 22! Lists!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "[ ]",
+     "list[0]",
+     "len()"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Square brackets, commas between items. Index zero is the first, just like strings!",
+   "cap": "Square brackets, commas between items. Index 0 is the first, just like strings!",
+   "scene": {
+    "type": "code",
+    "file": "bazaar.py",
+    "code": [
+     "items = [\"aloo\", \"pyaz\"]",
+     "",
+     "print(items)",
+     "print(items[0])"
+    ],
+    "out": "['aloo', 'pyaz']\naloo"
+   }
+  },
+  {
+   "who": "student",
+   "say": "Ammi changed her mind! Can I swap pyaz for dahi?",
+   "cap": "Ammi changed her mind! Can I swap pyaz for dahi?",
+   "with": {
+    "marks": [
+     {
+      "line": 0,
+      "from": 17,
+      "to": 23,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Lists can change. Just put a new value at that index!",
+   "cap": "Yes! Lists can change. Just put a new value at that index!",
+   "scene": {
+    "type": "code",
+    "file": "bazaar.py",
+    "code": [
+     "items = [\"aloo\", \"pyaz\"]",
+     "items[1] = \"dahi\"",
+     "print(items)",
+     "print(len(items))"
+    ],
+    "out": "['aloo', 'dahi']\n2",
+    "marks": [
+     {
+      "line": 1,
+      "from": 0,
+      "to": 8,
+      "label": "← change item 1"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "And len counts the items. Two!",
+   "cap": "And len() counts the items: 2!",
+   "with": {
+    "marks": [
+     {
+      "line": 3,
+      "from": 6,
+      "to": 9,
+      "label": "← count"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "psl.py",
+    "code": [
+     "scores = [45, 80, 12]",
+     "print(scores[1])"
+    ],
+    "options": [
+     "45",
+     "Error",
+     "80"
+    ],
+    "answer": 2,
+    "glow": [
+     1
+    ],
+    "tags": [
+     {
+      "line": 0,
+      "text": "0  1  2",
+      "color": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Eighty! Index one is the second score!",
+   "cap": "80! Index 1 is the 2nd score!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Lists count from zero, just like strings!",
+   "cap": "Yes! Lists count from 0, just like strings!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level twenty three, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 23 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

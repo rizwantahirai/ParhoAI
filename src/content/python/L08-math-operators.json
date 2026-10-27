@@ -1,0 +1,27 @@
+{
+ "level": 8, "of": 50, "title": "Math operators", "next": "Shortcuts like +=",
+ "keywords": ["+", "-", "*", "/", "//", "%"],
+ "cover": {"emoji": "🥟", "big": "+ - * /", "sub": "explained with a samosa party"},
+ "lines": [
+  {"who": "student", "say": "Seventeen samosas, five friends. How many does each one get?", "cap": "17 samosas, 5 friends. How many does each one get?", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "🥟", "banner": "SAMOSA PARTY", "bannerColor": "gold"}},
+  {"who": "teacher", "say": "Let Python do the maths! Math operators!", "cap": "Let Python do the maths! Math operators!",
+   "with": {"word": "+ - * /"}},
+  {"who": "teacher", "say": "Level eight! Math operators!", "cap": "Level 8! Math operators!", "scene": {"type": "level", "concepts": ["+ - * /", "//", "%"]}},
+  {"who": "teacher", "say": "Plus, minus, star for times, slash for divide!", "cap": "+, -, * for times, / for divide!",
+   "scene": {"type": "code", "file": "samosa.py", "code": ["print(17 + 5)", "print(17 * 2)", "print(17 / 5)"], "out": "22\n34\n3.4"}},
+  {"who": "student", "say": "Three point four samosas? Who eats point four?", "cap": "3.4 samosas? Who eats 0.4?!",
+   "with": {"marks": [{"line": 2, "from": 6, "to": 12, "color": "coral", "blink": true}]}},
+  {"who": "teacher", "say": "Ha! Double slash gives whole samosas. Percent gives the leftovers!", "cap": "Ha! // gives whole samosas. % gives the leftovers!",
+   "scene": {"type": "code", "file": "samosa.py", "code": ["print(17 // 5)", "print(17 % 5)"], "out": "3\n2",
+             "marks": [{"line": 0, "from": 9, "to": 11, "label": "← each"}, {"line": 1, "from": 9, "to": 10, "label": "← left over"}]}},
+  {"who": "teacher", "say": "Three each, and two left for me!", "cap": "3 each, and 2 left for me!"},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["print(10 / 2)"],
+             "options": ["5.0", "5", "Error"], "answer": 0, "glow": [0], "tags": [{"line": 0, "text": "/ → float", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Five point zero!", "cap": "5.0!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! A single slash always gives a float!", "cap": "Yes! A single / always gives a float!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level nine, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 9 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

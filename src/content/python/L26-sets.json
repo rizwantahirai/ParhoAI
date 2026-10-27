@@ -1,0 +1,26 @@
+{
+ "level": 26, "of": 50, "title": "Sets", "next": "Dictionaries",
+ "keywords": ["set", "len", "len()", "in"],
+ "cover": {"emoji": "🏔️", "big": "sets", "sub": "explained with a trip list"},
+ "lines": [
+  {"who": "student", "say": "Bilal wrote Murree twice on our trip list!", "cap": "Bilal wrote Murree TWICE on our trip list!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "🏔️", "banner": "TRIP PLAN", "bannerColor": "blue"}},
+  {"who": "teacher", "say": "Python fixes that for free! Meet the set!", "cap": "Python fixes that for free! Meet the set!",
+   "with": {"word": "set"}},
+  {"who": "teacher", "say": "Level twenty six! Sets!", "cap": "Level 26! Sets!", "scene": {"type": "level", "concepts": ["set { }", "unique"]}},
+  {"who": "teacher", "say": "Curly brackets make a set. Now count it!", "cap": "Curly brackets make a set. Now count it!",
+   "scene": {"type": "code", "file": "trip.py", "code": ["trip = {\"Murree\",", "        \"Naran\",", "        \"Murree\"}", "print(len(trip))"], "out": "2"}},
+  {"who": "student", "say": "Wait, three places, but only two?", "cap": "Wait, 3 places, but only 2?", "with": {"marks": [{"line": 2, "from": 8, "to": 16, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Sets keep only unique items! The second Murree just vanishes!", "cap": "Sets keep only UNIQUE items! The second Murree just vanishes!",
+   "with": {"marks": [{"line": 0, "from": 8, "to": 16, "label": "✓ kept"}, {"line": 2, "from": 8, "to": 16, "label": "✗ duplicate", "dash": true}]}},
+  {"who": "teacher", "say": "And checking with in is super fast. Is Swat on the list? Nope!", "cap": "And checking with in is super fast. Is Swat on the list? Nope!",
+   "scene": {"type": "code", "file": "trip.py", "code": ["trip = {\"Murree\", \"Naran\"}", "print(\"Swat\" in trip)"], "out": "False"}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["nums = {1, 2, 2, 3, 3}", "print(len(nums))"],
+             "options": ["3", "5", "Error"], "answer": 0, "glow": [0], "tags": [{"line": 0, "text": "dupes gone", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Three!", "cap": "3!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! The extra twos and threes are dropped!", "cap": "Yes! The extra 2s and 3s are dropped!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level twenty seven, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 27 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

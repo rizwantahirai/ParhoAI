@@ -1,0 +1,25 @@
+{
+ "level": 19, "of": 50, "title": "String indexing", "next": "String slicing",
+ "keywords": ["[0]", "[-1]", "print"],
+ "cover": {"emoji": "☎️", "big": "s[0]", "sub": "explained with a cousin's number"},
+ "lines": [
+  {"who": "student", "say": "Fatima only remembers the last digit of her cousin's number!", "cap": "Fatima only remembers the LAST digit of her cousin's number!", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "☎️", "banner": "COUSIN'S NUMBER", "bannerColor": "blue"}},
+  {"who": "teacher", "say": "Then grab one character by its position! That's indexing!", "cap": "Then grab one character by its position! That's indexing!",
+   "with": {"emoji": "🔢", "banner": "0 · 1 · 2 · 3", "bannerColor": "gold", "word": "indexing"}},
+  {"who": "teacher", "say": "Level nineteen! String indexing!", "cap": "Level 19! String indexing!", "scene": {"type": "level", "concepts": ["s[0]", "s[-1]"]}},
+  {"who": "teacher", "say": "Square brackets, with a position inside. You get one character back!", "cap": "Square brackets, with a position inside. You get one character back!",
+   "scene": {"type": "code", "file": "phone.py", "code": ["phone = \"03001234567\"", "", "print(phone[0])", "print(phone[-1])"], "out": "0\n7"}},
+  {"who": "student", "say": "Why zero for the first, and not one?", "cap": "Why 0 for the first, and not 1?",
+   "with": {"marks": [{"line": 2, "from": 12, "to": 13, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Python counts from zero! And minus one? That's always the last one!", "cap": "Python counts from 0! And -1? That's always the LAST one!",
+   "with": {"marks": [{"line": 2, "from": 12, "to": 13, "label": "← first"}, {"line": 3, "from": 12, "to": 14, "label": "← last"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "city.py", "code": ["city = \"Lahore\"", "print(city[2])"],
+             "options": ["a", "Error", "h"], "answer": 2, "glow": [1], "tags": [{"line": 0, "text": "L=0 a=1 h=2", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "H! L is zero, a is one, h is two!", "cap": "h! L is 0, a is 1, h is 2!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Counting starts at zero, so index two is the third letter!", "cap": "Yes! Counting starts at 0, so index 2 is the 3rd letter!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level twenty, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 20 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

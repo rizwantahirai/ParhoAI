@@ -1,0 +1,26 @@
+{
+ "level": 12, "of": 50, "title": "if / else", "next": "elif: more than two choices",
+ "keywords": ["if", "else"],
+ "cover": {"emoji": "💡", "big": "if else", "sub": "explained with load shedding"},
+ "lines": [
+  {"who": "student", "say": "Oh no! The light's gone again!", "cap": "Oh no! The light's gone AGAIN!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "💡", "banner": "⚡ LOAD SHEDDING"}},
+  {"who": "teacher", "say": "Relax! The UPS just made a decision. And in Python? That's one word. If!", "cap": "Relax! The UPS just made a decision. And in Python? That's one word: if!",
+   "with": {"emoji": "🔋", "banner": "UPS: POWER ON", "bannerColor": "jade", "word": "if"}},
+  {"who": "teacher", "say": "Level twelve! If, and else!", "cap": "Level 12! if and else!", "scene": {"type": "level", "concepts": ["if", "else"]}},
+  {"who": "teacher", "say": "If checks a condition. True? The indented line runs!", "cap": "if checks a condition. True? The indented line runs!",
+   "scene": {"type": "code", "file": "ups.py", "code": ["light = \"off\"", "", "if light == \"off\":", "    print(\"UPS on\")"], "out": "UPS on"}},
+  {"who": "student", "say": "Wait, why the colon?", "cap": "Wait, why the colon?", "with": {"marks": [{"line": 2, "from": 17, "to": 18, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Colon, plus four spaces! That's how Python knows what's inside the if!", "cap": "Colon + 4 spaces! That's how Python knows what's inside the if!",
+   "with": {"marks": [{"line": 2, "from": 17, "to": 18, "label": "← colon"}, {"line": 3, "from": 0, "to": 4, "label": "← 4 spaces", "dash": true}]}},
+  {"who": "teacher", "say": "And else? That's plan B! Light's back, UPS off!", "cap": "And else? That's plan B! Light's back, UPS off!",
+   "scene": {"type": "code", "file": "ups.py", "code": ["light = \"on\"", "", "if light == \"off\":", "    print(\"UPS on\")", "else:", "    print(\"UPS off\")"], "out": "UPS off"}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "chai.py", "code": ["chai = 2", "", "if chai > 3:", "    print(\"Too much chai\")", "else:", "    print(\"One more chai\")"],
+             "options": ["Too much chai", "One more chai", "Error"], "answer": 1, "glow": [4, 5], "dim": [3], "tags": [{"line": 2, "text": "2 > 3 ✗", "color": "red"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "One more chai!", "cap": "One more chai!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Two is not more than three, so else runs!", "cap": "Yes! 2 is not more than 3, so else runs!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level thirteen, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 13 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "level": 35, "of": 50, "title": "Default & keyword args", "next": "*args and **kwargs",
+ "keywords": ["def", "net", "tip"],
+ "cover": {"emoji": "📱", "big": "defaults", "sub": "explained with mobile load"},
+ "lines": [
+  {"who": "student", "say": "Every recharge, the shopkeeper asks, which network? It's always Jazz!", "cap": "Every recharge, the shopkeeper asks: which network? It's ALWAYS Jazz!", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "📱", "banner": "MOBILE LOAD", "bannerColor": "red"}},
+  {"who": "teacher", "say": "Then make Jazz the default! Python lets you!", "cap": "Then make Jazz the default! Python lets you!",
+   "with": {"word": "default"}},
+  {"who": "teacher", "say": "Level thirty five! Default, and keyword arguments!", "cap": "Level 35! Default and keyword arguments!", "scene": {"type": "level", "concepts": ["net=\"Jazz\"", "keyword args"]}},
+  {"who": "teacher", "say": "Skip the network, and Jazz fills in by itself!", "cap": "Skip the network, and Jazz fills in by itself!",
+   "scene": {"type": "code", "file": "load.py", "code": ["def load(rs, net=\"Jazz\"):", "    print(rs, \"on\", net)", "", "load(100)"], "out": "100 on Jazz"}},
+  {"who": "student", "say": "Wait, what's the equals doing up there?", "cap": "Wait, what's the = doing up there?", "with": {"marks": [{"line": 0, "from": 13, "to": 23, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "That's the default! Used only when you don't pass one!", "cap": "That's the default! Used only when you don't pass one!",
+   "with": {"marks": [{"line": 0, "from": 13, "to": 23, "label": "default"}]}},
+  {"who": "teacher", "say": "And keyword arguments? Name them, and the order doesn't matter!", "cap": "And keyword arguments? Name them, and the order doesn't matter!",
+   "scene": {"type": "code", "file": "load.py", "code": ["def load(rs, net=\"Jazz\"):", "    print(rs, \"on\", net)", "", "load(net=\"Zong\", rs=200)"], "out": "200 on Zong",
+             "marks": [{"line": 3, "from": 5, "to": 23, "label": "any order!", "color": "gold"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "bill.py", "code": ["def bill(amt, tip=50):", "    print(amt + tip)", "", "bill(500, 100)"],
+             "options": ["550", "Error", "600"], "answer": 2, "glow": [3], "tags": [{"line": 3, "text": "tip = 100", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Six hundred!", "cap": "600!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! You passed a tip, so the default fifty is ignored!", "cap": "Yes! You passed a tip, so the default 50 is ignored!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level thirty six, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 36 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

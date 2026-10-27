@@ -1,0 +1,24 @@
+{
+ "level": 28, "of": 50, "title": "Looping dicts", "next": "Nested data",
+ "keywords": ["for", "in", "items", ".items()"],
+ "cover": {"emoji": "☀️", "big": "dict loop", "sub": "explained with a heatwave"},
+ "lines": [
+  {"who": "student", "say": "Lahore forty one, Karachi thirty four. It's hot everywhere!", "cap": "Lahore 41, Karachi 34. It's HOT everywhere!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "☀️", "banner": "HEATWAVE", "bannerColor": "red"}},
+  {"who": "teacher", "say": "Let's print every city's temperature with one loop!", "cap": "Let's print every city's temperature with one loop!",
+   "with": {"word": ".items()"}},
+  {"who": "teacher", "say": "Level twenty eight! Looping through dictionaries!", "cap": "Level 28! Looping through dictionaries!", "scene": {"type": "level", "concepts": ["for", ".items()"]}},
+  {"who": "teacher", "say": "Dot items hands you each key and value, together!", "cap": ".items() hands you each key and value, together!",
+   "scene": {"type": "code", "file": "weather.py", "code": ["temp = {\"Lahore\": 41,", "        \"Karachi\": 34}", "for city, t in temp.items():", "    print(city, t)"], "out": ["Lahore 41", "Karachi 34"]}},
+  {"who": "student", "say": "Two names after for?", "cap": "TWO names after for?", "with": {"marks": [{"line": 2, "from": 4, "to": 11, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Yes! Each pair unpacks. City gets the key, t gets the value!", "cap": "Yes! Each pair unpacks. city gets the key, t gets the value!",
+   "with": {"marks": [{"line": 2, "from": 4, "to": 8, "label": "key"}, {"line": 2, "from": 10, "to": 11, "label": "value", "dash": true}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "eidi.py", "code": ["eidi = {\"Ali\": 500}", "for x in eidi:", "    print(x)"],
+             "options": ["Ali", "500", "Ali 500"], "answer": 0, "glow": [1], "tags": [{"line": 1, "text": "keys only", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Just Ali!", "cap": "Just Ali!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! A plain loop gives you only the keys!", "cap": "Yes! A plain loop gives you only the KEYS!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level twenty nine, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 29 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

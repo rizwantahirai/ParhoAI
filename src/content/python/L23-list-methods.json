@@ -1,0 +1,26 @@
+{
+ "level": 23, "of": 50, "title": "List methods", "next": "List slicing and in",
+ "keywords": ["append", "remove", "pop", ".append()", ".remove()", ".pop()"],
+ "cover": {"emoji": "🌙", "big": ".append()", "sub": "explained with Eid shopping"},
+ "lines": [
+  {"who": "student", "say": "Chand raat! Ayesha keeps adding things to her Eid shopping!", "cap": "Chand raat! Ayesha keeps adding things to her Eid shopping!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "🌙", "banner": "CHAND RAAT", "bannerColor": "violet"}},
+  {"who": "teacher", "say": "Lists have tools to grow, and shrink. List methods!", "cap": "Lists have tools to grow and shrink. List methods!",
+   "with": {"emoji": "🛍️", "banner": "EID CART", "bannerColor": "gold", "word": "methods"}},
+  {"who": "teacher", "say": "Level twenty three! List methods!", "cap": "Level 23! List methods!", "scene": {"type": "level", "concepts": [".append()", ".remove()", ".pop()"]}},
+  {"who": "teacher", "say": "Append adds a new item, right at the end!", "cap": ".append() adds a new item, right at the END!",
+   "scene": {"type": "code", "file": "eid.py", "code": ["cart = [\"kurta\", \"shoes\"]", "cart.append(\"bangles\")", "print(cart)"], "out": "['kurta', 'shoes', 'bangles']"}},
+  {"who": "student", "say": "And if she changes her mind about the shoes?", "cap": "And if she changes her mind about the shoes?",
+   "with": {"marks": [{"line": 0, "from": 17, "to": 24, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Remove takes it out by name! And pop? That removes the last item.", "cap": ".remove() takes it out by name! And .pop()? That removes the last item.",
+   "scene": {"type": "code", "file": "eid.py", "code": ["cart = [\"kurta\", \"shoes\"]", "cart.remove(\"shoes\")", "print(cart)"], "out": "['kurta']",
+             "marks": [{"line": 1, "from": 5, "to": 11, "label": "← by name"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "batting.py", "code": ["order = [\"Ali\", \"Zara\", \"Hamza\"]", "order.pop()", "print(order)"],
+             "options": ["['Ali', 'Zara']", "['Zara', 'Hamza']", "['Ali', 'Hamza']"], "answer": 0, "glow": [1], "tags": [{"line": 1, "text": "last one out", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Ali and Zara! Pop took Hamza from the end!", "cap": "Ali and Zara! pop() took Hamza from the end!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Pop with nothing inside always removes the last item!", "cap": "Yes! pop() with nothing inside always removes the LAST item!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level twenty four, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 24 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

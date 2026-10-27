@@ -1,0 +1,26 @@
+{
+ "level": 27, "of": 50, "title": "Dictionaries", "next": "Looping through dictionaries",
+ "keywords": ["dict", "key", "value"],
+ "cover": {"emoji": "🛒", "big": "dict", "sub": "explained with sabzi prices"},
+ "lines": [
+  {"who": "student", "say": "Bhai, onions kitne ke? And potatoes? And tomatoes?", "cap": "Bhai, onions kitne ke? And potatoes? And tomatoes?", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "🛒", "banner": "SABZI MANDI", "bannerColor": "coral"}},
+  {"who": "teacher", "say": "Every item has a price! In Python, that's a dictionary!", "cap": "Every item has a price! In Python, that's a dictionary!",
+   "with": {"word": "dict"}},
+  {"who": "teacher", "say": "Level twenty seven! Dictionaries!", "cap": "Level 27! Dictionaries!", "scene": {"type": "level", "concepts": ["dict { }", "key: value"]}},
+  {"who": "teacher", "say": "Key, colon, value. Then ask by the key!", "cap": "Key, colon, value. Then ask by the key!",
+   "scene": {"type": "code", "file": "mandi.py", "code": ["price = {\"aloo\": 80,", "         \"pyaz\": 120}", "print(price[\"pyaz\"])"], "out": "120"}},
+  {"who": "student", "say": "Why a word inside the square brackets?", "cap": "Why a WORD inside the square brackets?", "with": {"marks": [{"line": 2, "from": 11, "to": 19, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "That's the key! No counting positions. Just ask by name!", "cap": "That's the key! No counting positions. Just ask by name!",
+   "with": {"marks": [{"line": 2, "from": 11, "to": 19, "label": "← key"}, {"line": 1, "from": 17, "to": 20, "label": "← value", "dash": true}]}},
+  {"who": "teacher", "say": "New key? Just assign it! Tomatoes, added!", "cap": "New key? Just assign it! Tomatoes, added!",
+   "scene": {"type": "code", "file": "mandi.py", "code": ["price = {\"aloo\": 80}", "price[\"tamatar\"] = 200", "print(price)"], "out": "{'aloo': 80, 'tamatar': 200}"}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "phone.py", "code": ["n = {\"Ali\": 300,", "     \"Ali\": 321}", "print(n[\"Ali\"])"],
+             "options": ["300", "Error", "321"], "answer": 2, "glow": [1], "dim": [0], "tags": [{"line": 1, "text": "overwrites!", "color": "coral"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Three twenty one!", "cap": "321!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Keys are unique, so the last Ali wins!", "cap": "Yes! Keys are unique, so the last Ali wins!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level twenty eight, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 28 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

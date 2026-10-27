@@ -1,0 +1,192 @@
+{
+ "level": 44,
+ "of": 50,
+ "title": "Files & with",
+ "next": "JSON",
+ "keywords": [
+  "with",
+  "open",
+  "write",
+  "read"
+ ],
+ "cover": {
+  "emoji": "🛒",
+  "big": "Files",
+  "sub": "save your data with open()"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "Ammi's grocery list! I closed the program, and it's gone!",
+   "cap": "Ammi's grocery list! I closed the program, and it's GONE!",
+   "mood": "surprised",
+   "scene": {
+    "type": "hook",
+    "emoji": "🛒",
+    "banner": "GROCERY LIST",
+    "bannerColor": "blue"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Save it in a file! Open, write, read. With!",
+   "cap": "Save it in a file! open, write, read. with!",
+   "with": {
+    "word": "with open"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level forty four! Files, and with!",
+   "cap": "Level 44! Files and with!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "open()",
+     "with",
+     "\"w\""
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Write the list into a file. Then open it again, and read it back!",
+   "cap": "Write the list into a file. Then open it again, and read it back!",
+   "scene": {
+    "type": "code",
+    "file": "list.py",
+    "code": [
+     "with open(\"list.txt\", \"w\") as f:",
+     "    f.write(\"Atta, Cheeni\")",
+     "",
+     "with open(\"list.txt\") as f:",
+     "    print(f.read())"
+    ],
+    "out": "Atta, Cheeni"
+   }
+  },
+  {
+   "who": "student",
+   "say": "What is that little w?",
+   "cap": "What is that little \"w\"?",
+   "with": {
+    "marks": [
+     {
+      "line": 0,
+      "from": 22,
+      "to": 25,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "W means write! No letter means read.",
+   "cap": "\"w\" means write! No letter means read.",
+   "with": {
+    "marks": [
+     {
+      "line": 0,
+      "from": 22,
+      "to": 25,
+      "label": "← write"
+     },
+     {
+      "line": 3,
+      "from": 5,
+      "to": 21,
+      "label": "← read",
+      "dash": true
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "And with closes the file for you, automatically!",
+   "cap": "And with closes the file for you, automatically!",
+   "with": {
+    "marks": [
+     {
+      "line": 0,
+      "from": 0,
+      "to": 4
+     },
+     {
+      "line": 3,
+      "from": 0,
+      "to": 4,
+      "label": "← auto close"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "with open(\"d.txt\", \"w\") as f:",
+     "    f.write(\"Ali\")",
+     "with open(\"d.txt\", \"w\") as f:",
+     "    f.write(\"Zara\")",
+     "print(open(\"d.txt\").read())"
+    ],
+    "options": [
+     "Zara",
+     "AliZara",
+     "Ali"
+    ],
+    "answer": 0,
+    "glow": [
+     2,
+     3
+    ],
+    "dim": [
+     0,
+     1
+    ],
+    "tags": [
+     {
+      "line": 2,
+      "text": "\"w\" wipes first!",
+      "color": "red"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Just Zara!",
+   "cap": "Just Zara!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! W starts the file fresh, so Ali gets wiped!",
+   "cap": "Yes! \"w\" starts the file fresh, so Ali gets wiped!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level forty five, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 45 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

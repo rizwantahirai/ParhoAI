@@ -1,0 +1,25 @@
+{
+ "level": 20, "of": 50, "title": "String slicing", "next": "String methods",
+ "keywords": ["[0:5]", "print"],
+ "cover": {"emoji": "🪪", "big": "s[0:5]", "sub": "explained with your ID card"},
+ "lines": [
+  {"who": "student", "say": "This form wants only the first five digits of my ID card!", "cap": "This form wants only the first 5 digits of my ID card!", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "🪪", "banner": "NADRA FORM", "bannerColor": "jade"}},
+  {"who": "teacher", "say": "Easy! Cut a piece out of the string. That's slicing!", "cap": "Easy! Cut a piece out of the string. That's slicing!",
+   "with": {"emoji": "✂️", "banner": "CUT!", "bannerColor": "coral", "word": "slicing"}},
+  {"who": "teacher", "say": "Level twenty! String slicing!", "cap": "Level 20! String slicing!", "scene": {"type": "level", "concepts": ["s[start:end]"]}},
+  {"who": "teacher", "say": "Start, colon, end. Python cuts from the start, up to the end!", "cap": "Start : end. Python cuts from the start, up to the end!",
+   "scene": {"type": "code", "file": "card.py", "code": ["card = \"35202-1234567-1\"", "", "print(card[0:5])"], "out": "35202"}},
+  {"who": "student", "say": "Wait, index five is the dash. Why isn't it included?", "cap": "Wait, index 5 is the dash. Why isn't it included?",
+   "with": {"marks": [{"line": 2, "from": 11, "to": 14, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "The end is never included! Zero to five gives exactly five characters.", "cap": "The end is NEVER included! 0 to 5 gives exactly 5 characters.",
+   "with": {"marks": [{"line": 2, "from": 11, "to": 14, "label": "← 0,1,2,3,4"}], "tags": [{"line": 0, "text": "[5] = \"-\" ✗", "color": "red"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "city.py", "code": ["city = \"Islamabad\"", "print(city[0:5])"],
+             "options": ["Islam", "Islama", "Isla"], "answer": 0, "glow": [1], "tags": [{"line": 1, "text": "5 not included", "color": "coral"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Islam! Five letters, and index five is left out!", "cap": "Islam! 5 letters, and index 5 is left out!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! A slice always stops just before the end number!", "cap": "Yes! A slice always stops just BEFORE the end number!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level twenty one, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 21 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

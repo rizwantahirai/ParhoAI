@@ -1,0 +1,24 @@
+{
+ "level": 33, "of": 50, "title": "Functions", "next": "Parameters and return",
+ "keywords": ["def", "wish", "wish()"],
+ "cover": {"emoji": "🌙", "big": "functions", "sub": "explained with Eid wishes"},
+ "lines": [
+  {"who": "student", "say": "Eid Mubarak to fifty relatives! I'm typing the same thing all day!", "cap": "Eid Mubarak to 50 relatives! I'm typing the same thing ALL day!", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "🌙", "banner": "EID MUBARAK", "bannerColor": "jade"}},
+  {"who": "teacher", "say": "Write it once, use it forever! That's a function!", "cap": "Write it once, use it forever! That's a function!",
+   "with": {"word": "def"}},
+  {"who": "teacher", "say": "Level thirty three! Functions!", "cap": "Level 33! Functions!", "scene": {"type": "level", "concepts": ["def", "call()"]}},
+  {"who": "teacher", "say": "Def, a name, brackets, colon. Then call it by name!", "cap": "def, a name, brackets, colon. Then call it by name!",
+   "scene": {"type": "code", "file": "eid.py", "code": ["def wish():", "    print(\"Eid Mubarak!\")", "", "wish()", "wish()"], "out": ["Eid Mubarak!", "Eid Mubarak!"]}},
+  {"who": "student", "say": "Why didn't the def line print anything?", "cap": "Why didn't the def line print anything?", "with": {"marks": [{"line": 0, "from": 0, "to": 11, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Def only saves the recipe! The call is what runs it!", "cap": "def only SAVES the recipe! The call is what RUNS it!",
+   "with": {"marks": [{"line": 0, "from": 0, "to": 11, "label": "saved", "dash": true}, {"line": 3, "from": 0, "to": 6, "label": "← runs!"}, {"line": 4, "from": 0, "to": 6, "label": "← runs!"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "roti.py", "code": ["def roti():", "    print(\"Roti ready!\")", "", "print(\"Start\")"],
+             "options": ["Roti ready!", "Start", "Error"], "answer": 1, "glow": [3], "dim": [0, 1], "tags": [{"line": 0, "text": "never called", "color": "red"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Just start!", "cap": "Just Start!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Roti was never called, so it never ran!", "cap": "Yes! roti() was never called, so it never ran!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level thirty four, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 34 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

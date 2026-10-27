@@ -1,0 +1,182 @@
+{
+ "level": 47,
+ "of": 50,
+ "title": "Classes & __init__",
+ "next": "Methods",
+ "keywords": [
+  "class",
+  "__init__",
+  "self"
+ ],
+ "cover": {
+  "emoji": "🎒",
+  "big": "Classes",
+  "sub": "build your own data types"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "Our school has a thousand students! A variable for each one?",
+   "cap": "Our school has 1000 students! A variable for EACH one?",
+   "mood": "surprised",
+   "scene": {
+    "type": "hook",
+    "emoji": "🎒",
+    "banner": "1000 STUDENTS",
+    "bannerColor": "blue"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Make one blueprint, and stamp out students! A class!",
+   "cap": "Make ONE blueprint, and stamp out students! A class!",
+   "with": {
+    "word": "class"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level forty seven! Classes, and dunder init!",
+   "cap": "Level 47! Classes and __init__!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "class",
+     "__init__",
+     "self"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Class is the blueprint. Dunder init runs when you create a student!",
+   "cap": "class is the blueprint. __init__ runs when you create a student!",
+   "scene": {
+    "type": "code",
+    "file": "school.py",
+    "code": [
+     "class Student:",
+     "    def __init__(self, name):",
+     "        self.name = name",
+     "",
+     "s = Student(\"Ayesha\")",
+     "print(s.name)"
+    ],
+    "out": "Ayesha"
+   }
+  },
+  {
+   "who": "student",
+   "say": "And what is self?",
+   "cap": "And what is self?",
+   "with": {
+    "marks": [
+     {
+      "line": 1,
+      "from": 17,
+      "to": 21,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Self is the object being built! Self dot name sticks the name onto it.",
+   "cap": "self is the object being built! self.name sticks the name onto it.",
+   "with": {
+    "marks": [
+     {
+      "line": 1,
+      "from": 17,
+      "to": 21,
+      "label": "← new object"
+     },
+     {
+      "line": 2,
+      "from": 8,
+      "to": 17,
+      "label": "← saved on it"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Then s dot name reads it back. Ayesha!",
+   "cap": "Then s.name reads it back. Ayesha!",
+   "with": {
+    "marks": [
+     {
+      "line": 5,
+      "from": 6,
+      "to": 12,
+      "label": "← read it"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "class Car:",
+     "    def __init__(self, c):",
+     "        color = c",
+     "",
+     "x = Car(\"red\")",
+     "print(x.color)"
+    ],
+    "options": [
+     "Error",
+     "red",
+     "None"
+    ],
+    "answer": 0,
+    "glow": [
+     2
+    ],
+    "tags": [
+     {
+      "line": 2,
+      "text": "no self. !",
+      "color": "red"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Error!",
+   "cap": "Error!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Without self dot, color was never saved on the car!",
+   "cap": "Yes! Without self., color was never saved on the car!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level forty eight, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 48 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

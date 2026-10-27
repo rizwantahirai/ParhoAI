@@ -1,0 +1,26 @@
+{
+ "level": 18, "of": 50, "title": "Nested loops", "next": "String indexing",
+ "keywords": ["for", "range", "print()", "end"],
+ "cover": {"emoji": "🏏", "big": "loop×loop", "sub": "explained with cricket overs"},
+ "lines": [
+  {"who": "student", "say": "Two overs, balls in each. How do I count every single ball?", "cap": "2 overs, balls in each. How do I count every single ball?", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "🏏", "banner": "PSL MATCH", "bannerColor": "gold"}},
+  {"who": "teacher", "say": "A loop inside a loop! Overs outside, balls inside. Nested loops!", "cap": "A loop inside a loop! Overs outside, balls inside. Nested loops!",
+   "with": {"emoji": "🔁", "banner": "LOOP × LOOP", "bannerColor": "violet", "word": "nested loops"}},
+  {"who": "teacher", "say": "Level eighteen! Nested loops!", "cap": "Level 18! Nested loops!", "scene": {"type": "level", "concepts": ["loop in a loop"]}},
+  {"who": "teacher", "say": "For every over, the inner loop bowls all its balls. Three per over, here!", "cap": "For every over, the inner loop bowls all its balls. 3 per over, here!",
+   "scene": {"type": "code", "file": "overs.py", "code": ["for over in range(2):", "    for ball in range(1, 4):", "        print(ball, end=\"\")", "    print()"], "out": "123\n123"}},
+  {"who": "student", "say": "Wait, why does the inner one restart at one?", "cap": "Wait, why does the inner one restart at 1?",
+   "with": {"marks": [{"line": 1, "from": 4, "to": 28, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Each new over starts the inner loop fresh! The empty print starts a new line.", "cap": "Each new over starts the inner loop fresh! The empty print() starts a new line.",
+   "with": {"marks": [{"line": 1, "from": 4, "to": 28, "label": "← fresh every over"}, {"line": 3, "from": 4, "to": 11, "label": "← new line", "dash": true}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "shaadi.py", "code": ["plates = 0", "for table in range(2):", "    for guest in range(3):", "        plates += 1", "print(plates)"],
+             "options": ["5", "6", "9"], "answer": 1, "glow": [3],
+             "tags": [{"line": 1, "text": "2 tables", "color": "gold"}, {"line": 2, "text": "× 3 guests", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Six! Two tables, three guests each!", "cap": "6! 2 tables, 3 guests each!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! The inner loop runs three times, for each table. Two times three!", "cap": "Yes! The inner loop runs 3 times for each table. 2 × 3!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level nineteen, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 19 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

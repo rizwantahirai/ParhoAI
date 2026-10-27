@@ -1,0 +1,182 @@
+{
+ "level": 46,
+ "of": 50,
+ "title": "Modules & import",
+ "next": "Classes and objects",
+ "keywords": [
+  "import",
+  "from",
+  "math",
+  "ceil"
+ ],
+ "cover": {
+  "emoji": "🛺",
+  "big": "import",
+  "sub": "use code someone already wrote"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "Seven cousins, two per rickshaw. Three and a half rickshaws?",
+   "cap": "7 cousins, 2 per rickshaw. 3.5 rickshaws?",
+   "mood": "confused",
+   "scene": {
+    "type": "hook",
+    "emoji": "🛺",
+    "banner": "7 COUSINS",
+    "bannerColor": "gold"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Round it up! Python already has that tool. Just import it!",
+   "cap": "Round it up! Python already has that tool. Just import it!",
+   "with": {
+    "word": "import"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level forty six! Modules, and import!",
+   "cap": "Level 46! Modules and import!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "import",
+     "math",
+     "from"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Import math. Math dot ceil rounds up. Four rickshaws!",
+   "cap": "import math. math.ceil rounds UP. 4 rickshaws!",
+   "scene": {
+    "type": "code",
+    "file": "rickshaw.py",
+    "code": [
+     "import math",
+     "print(math.ceil(7 / 2))"
+    ],
+    "out": "4"
+   }
+  },
+  {
+   "who": "student",
+   "say": "Why math dot?",
+   "cap": "Why math dot?",
+   "with": {
+    "marks": [
+     {
+      "line": 1,
+      "from": 6,
+      "to": 11,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "The dot means, go inside math, and grab ceil!",
+   "cap": "The dot means: go inside math, and grab ceil!",
+   "with": {
+    "marks": [
+     {
+      "line": 1,
+      "from": 6,
+      "to": 10,
+      "label": "module"
+     },
+     {
+      "line": 1,
+      "from": 11,
+      "to": 15,
+      "label": "← tool"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Or use from, to grab just ceil. No dot needed!",
+   "cap": "Or use from, to grab just ceil. No dot needed!",
+   "scene": {
+    "type": "code",
+    "file": "rickshaw.py",
+    "code": [
+     "from math import ceil",
+     "print(ceil(9 / 4))"
+    ],
+    "marks": [
+     {
+      "line": 0,
+      "from": 0,
+      "to": 4,
+      "label": "just ceil"
+     }
+    ],
+    "out": "3"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "from math import sqrt",
+     "print(math.sqrt(16))"
+    ],
+    "options": [
+     "4.0",
+     "Error",
+     "4"
+    ],
+    "answer": 1,
+    "glow": [
+     1
+    ],
+    "tags": [
+     {
+      "line": 1,
+      "text": "math? never imported!",
+      "color": "red"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Error!",
+   "cap": "Error!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Only sqrt was imported. The name math does not exist!",
+   "cap": "Yes! Only sqrt was imported. The name math does not exist!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level forty seven, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 47 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

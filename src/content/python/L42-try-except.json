@@ -1,0 +1,193 @@
+{
+ "level": 42,
+ "of": 50,
+ "title": "try / except",
+ "next": "raise your own errors",
+ "keywords": [
+  "try",
+  "except",
+  "ValueError"
+ ],
+ "cover": {
+  "emoji": "🛺",
+  "big": "try except",
+  "sub": "stop your code from crashing"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "I typed the rickshaw fare as sau, in words, and my app crashed!",
+   "cap": "I typed the rickshaw fare as \"sau\", in words, and my app crashed!",
+   "mood": "surprised",
+   "scene": {
+    "type": "hook",
+    "emoji": "🛺",
+    "banner": "CRASH!",
+    "bannerColor": "red"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Catch the error before it crashes! Try, and except!",
+   "cap": "Catch the error before it crashes! try and except!",
+   "with": {
+    "word": "try"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level forty two! Try, and except!",
+   "cap": "Level 42! try and except!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "try",
+     "except"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Try the risky line. If it fails, except catches it. No crash!",
+   "cap": "Try the risky line. If it fails, except catches it. No crash!",
+   "scene": {
+    "type": "code",
+    "file": "fare.py",
+    "code": [
+     "try:",
+     "    fare = int(\"sau\")",
+     "    print(fare)",
+     "except ValueError:",
+     "    print(\"Numbers only!\")"
+    ],
+    "out": "Numbers only!"
+   }
+  },
+  {
+   "who": "student",
+   "say": "Does print fare still run?",
+   "cap": "Does print(fare) still run?",
+   "with": {
+    "marks": [
+     {
+      "line": 2,
+      "from": 4,
+      "to": 15,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "No! The moment an error hits, Python jumps straight to except!",
+   "cap": "No! The moment an error hits, Python jumps straight to except!",
+   "with": {
+    "marks": [
+     {
+      "line": 1,
+      "from": 11,
+      "to": 21,
+      "label": "💥 error"
+     },
+     {
+      "line": 3,
+      "from": 0,
+      "to": 6,
+      "label": "← jumps here"
+     }
+    ],
+    "dim": [
+     2
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Splitting the bill with zero friends? Catch that error too!",
+   "cap": "Splitting the bill with 0 friends? Catch that error too!",
+   "scene": {
+    "type": "code",
+    "file": "bill.py",
+    "code": [
+     "bill = 1200",
+     "friends = 0",
+     "try:",
+     "    print(bill / friends)",
+     "except ZeroDivisionError:",
+     "    print(\"Nobody came!\")"
+    ],
+    "out": "Nobody came!"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "try:",
+     "    x = int(\"5\") + \"5\"",
+     "    print(x)",
+     "except ValueError:",
+     "    print(\"value\")",
+     "except TypeError:",
+     "    print(\"type\")"
+    ],
+    "options": [
+     "value",
+     "55",
+     "type"
+    ],
+    "answer": 2,
+    "glow": [
+     5,
+     6
+    ],
+    "dim": [
+     2,
+     3,
+     4
+    ],
+    "tags": [
+     {
+      "line": 1,
+      "text": "5 + \"5\" 💥",
+      "color": "red"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Type!",
+   "cap": "type!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Int of five works. Adding a number to text is a type error!",
+   "cap": "Yes! int(\"5\") works. Number + text is a TypeError!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level forty three, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 43 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "level": 34, "of": 50, "title": "Parameters & return", "next": "Default and keyword arguments",
+ "keywords": ["def", "return", "None"],
+ "cover": {"emoji": "🛺", "big": "return", "sub": "explained with rickshaw fares"},
+ "lines": [
+  {"who": "student", "say": "Rickshaw wala says thirty rupees a kilometre. So, five kilometres?", "cap": "Rickshaw wala says Rs 30 a km. So, 5 km?", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "🛺", "banner": "RICKSHAW FARE", "bannerColor": "coral"}},
+  {"who": "teacher", "say": "Let a function do the maths, and hand back the answer!", "cap": "Let a function do the maths, and hand back the answer!",
+   "with": {"word": "return"}},
+  {"who": "teacher", "say": "Level thirty four! Parameters, and return!", "cap": "Level 34! Parameters and return!", "scene": {"type": "level", "concepts": ["parameter", "return"]}},
+  {"who": "teacher", "say": "K M is the parameter. Return sends the answer back!", "cap": "km is the parameter. return sends the answer back!",
+   "scene": {"type": "code", "file": "fare.py", "code": ["def fare(km):", "    return km * 30", "", "print(fare(5))"], "out": "150",
+             "marks": [{"line": 0, "from": 9, "to": 11, "label": "← parameter", "color": "gold"}]}},
+  {"who": "student", "say": "Why return? Why not just print?", "cap": "Why return? Why not just print?", "with": {"marks": [{"line": 1, "from": 4, "to": 10, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Return gives you a value to use again! Two rides, added up!", "cap": "return gives you a value to use again! Two rides, added up!",
+   "scene": {"type": "code", "file": "fare.py", "code": ["def fare(km):", "    return km * 30", "", "total = fare(5) + fare(3)", "print(total)"], "out": "240", "typing": false,
+             "marks": [{"line": 1, "from": 4, "to": 10, "label": "hands back"}, {"line": 3, "from": 8, "to": 25, "label": "150 + 90", "dash": true}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["def add(a, b):", "    a + b", "", "print(add(2, 3))"],
+             "options": ["None", "5", "Error"], "answer": 0, "glow": [1], "tags": [{"line": 1, "text": "no return!", "color": "red"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "None!", "cap": "None!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! No return, so the function hands back None!", "cap": "Yes! No return, so the function hands back None!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level thirty five, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 35 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

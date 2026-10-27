@@ -1,0 +1,27 @@
+{
+ "level": 2, "of": 50, "title": "Comments", "next": "Variables: boxes for your data",
+ "keywords": ["#", "comment", "comments"],
+ "cover": {"emoji": "🍛", "big": "# comments", "sub": "explained with Ammi's biryani"},
+ "lines": [
+  {"who": "student", "say": "Ammi's biryani recipe has little notes everywhere. Don't burn the onions!", "cap": "Ammi's biryani recipe has little notes everywhere. Don't burn the onions!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "🍛", "banner": "AMMI'S RECIPE", "bannerColor": "coral"}},
+  {"who": "teacher", "say": "Code needs notes too! In Python, they're called comments!", "cap": "Code needs notes too! In Python, they're called comments!",
+   "with": {"emoji": "📝", "word": "#"}},
+  {"who": "teacher", "say": "Level two! Comments!", "cap": "Level 2! Comments!", "scene": {"type": "level", "concepts": ["#", "comments"]}},
+  {"who": "teacher", "say": "A hash sign starts a comment. Python skips it completely!", "cap": "A # starts a comment. Python skips it completely!",
+   "scene": {"type": "code", "file": "biryani.py", "code": ["# Ammi's biryani recipe", "print(\"Add rice\")", "print(\"Add masala\")  # spicy!"], "out": "Add rice\nAdd masala"}},
+  {"who": "student", "say": "So the computer never reads it?", "cap": "So the computer never reads it?",
+   "with": {"marks": [{"line": 0, "from": 0, "to": 23, "color": "coral", "blink": true}]}},
+  {"who": "teacher", "say": "Never! Comments are notes for humans. Even at the end of a line!", "cap": "Never! Comments are notes for humans. Even at the end of a line!",
+   "with": {"marks": [{"line": 0, "from": 0, "to": 1, "label": "← comment"}, {"line": 2, "from": 21, "to": 29, "label": "← skipped", "dash": true}]}},
+  {"who": "teacher", "say": "Pro trick! Put a hash in front of code, and it switches off!", "cap": "Pro trick! Put a # in front of code, and it switches off!",
+   "scene": {"type": "code", "file": "biryani.py", "code": ["print(\"Add rice\")", "# print(\"Add salt\")"], "out": "Add rice", "dim": [1]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["# print(\"Ali\")", "print(\"Ayesha\")"],
+             "options": ["Ayesha", "Ali Ayesha", "Error"], "answer": 0, "glow": [1], "dim": [0], "tags": [{"line": 0, "text": "skipped", "color": "red"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Just Ayesha!", "cap": "Just Ayesha!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! The hash turned the first line into a comment!", "cap": "Yes! The # turned the first line into a comment!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level three, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 3 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

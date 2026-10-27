@@ -1,0 +1,200 @@
+{
+ "level": 50,
+ "of": 50,
+ "title": "Generators & yield",
+ "next": "Season 2: Python for Data",
+ "keywords": [
+  "yield",
+  "next",
+  "def",
+  "for"
+ ],
+ "cover": {
+  "emoji": "🎟️",
+  "big": "yield",
+  "sub": "the grand finale: generators"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "The bank gives tokens one at a time. Not all thousand at once!",
+   "cap": "The bank gives tokens one at a time. Not all 1000 at once!",
+   "mood": "confused",
+   "scene": {
+    "type": "hook",
+    "emoji": "🎟️",
+    "banner": "TOKEN: A1",
+    "bannerColor": "blue"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Smart! Python can do that too. A generator, with yield!",
+   "cap": "Smart! Python can do that too. A generator, with yield!",
+   "with": {
+    "word": "yield"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level fifty! The finale! Generators, and yield!",
+   "cap": "Level 50! The finale! Generators and yield!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "yield",
+     "next()"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Each yield hands out one token, then waits for the next request!",
+   "cap": "Each yield hands out ONE token, then waits for the next request!",
+   "scene": {
+    "type": "code",
+    "file": "bank.py",
+    "code": [
+     "def tokens():",
+     "    yield \"A1\"",
+     "    yield \"A2\"",
+     "",
+     "for t in tokens():",
+     "    print(t)"
+    ],
+    "out": "A1\nA2"
+   }
+  },
+  {
+   "who": "student",
+   "say": "Why yield? Why not return?",
+   "cap": "Why yield? Why not return?",
+   "with": {
+    "marks": [
+     {
+      "line": 1,
+      "from": 4,
+      "to": 9,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Return ends the function. Yield just pauses it, and remembers where it was!",
+   "cap": "return ENDS the function. yield just pauses it, and remembers where it was!",
+   "with": {
+    "marks": [
+     {
+      "line": 1,
+      "from": 4,
+      "to": 9,
+      "label": "⏸ pause"
+     },
+     {
+      "line": 2,
+      "from": 4,
+      "to": 9,
+      "label": "⏸ pause"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "So even an endless line is fine! Next asks for one more.",
+   "cap": "So even an endless line is fine! next() asks for one more.",
+   "scene": {
+    "type": "code",
+    "file": "bank.py",
+    "code": [
+     "def tokens():",
+     "    n = 1",
+     "    while True:",
+     "        yield n",
+     "        n += 1",
+     "g = tokens()",
+     "print(next(g), next(g))"
+    ],
+    "marks": [
+     {
+      "line": 6,
+      "from": 6,
+      "to": 13,
+      "label": "one at a time"
+     }
+    ],
+    "out": "1 2"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "def gen():",
+     "    yield 5",
+     "    yield 10",
+     "",
+     "g = gen()",
+     "next(g)",
+     "print(next(g))"
+    ],
+    "options": [
+     "10",
+     "5",
+     "Error"
+    ],
+    "answer": 0,
+    "glow": [
+     2,
+     6
+    ],
+    "dim": [
+     1,
+     5
+    ],
+    "tags": [
+     {
+      "line": 5,
+      "text": "5 used up",
+      "color": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Ten!",
+   "cap": "10!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! The first next took five. The generator continued from there!",
+   "cap": "Yes! The first next() took 5. The generator continued from there!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "You finished all fifty levels! Congratulations! Season two, Python for Data, is next!",
+   "cap": "You finished all 50 levels! Congratulations! Season 2: Python for Data, is next!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

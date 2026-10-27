@@ -1,0 +1,180 @@
+{
+ "level": 45,
+ "of": 50,
+ "title": "JSON",
+ "next": "Modules and import",
+ "keywords": [
+  "json",
+  "dumps",
+  "loads",
+  "import"
+ ],
+ "cover": {
+  "emoji": "🏏",
+  "big": "JSON",
+  "sub": "how apps send data to each other"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "How does the cricket app get live scores from the internet?",
+   "cap": "How does the cricket app get live scores from the internet?",
+   "mood": "confused",
+   "scene": {
+    "type": "hook",
+    "emoji": "🏏",
+    "banner": "LIVE SCORE",
+    "bannerColor": "jade"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "As text, in a format called JSON! Python speaks it too!",
+   "cap": "As text, in a format called JSON! Python speaks it too!",
+   "with": {
+    "word": "JSON"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level forty five! JSON!",
+   "cap": "Level 45! JSON!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "json.dumps",
+     "json.loads"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Json dumps turns a dictionary into JSON text!",
+   "cap": "json.dumps turns a dict into JSON text!",
+   "scene": {
+    "type": "code",
+    "file": "score.py",
+    "code": [
+     "import json",
+     "p = {\"name\": \"Hamza\", \"runs\": 72}",
+     "s = json.dumps(p)",
+     "print(s)"
+    ],
+    "out": "{\"name\": \"Hamza\", \"runs\": 72}"
+   }
+  },
+  {
+   "who": "student",
+   "say": "It looks exactly the same! What changed?",
+   "cap": "It looks EXACTLY the same! What changed?",
+   "with": {
+    "marks": [
+     {
+      "line": 2,
+      "from": 4,
+      "to": 17,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Now it is one string! Ready to save, or send to any app.",
+   "cap": "Now it is ONE string! Ready to save, or send to any app.",
+   "with": {
+    "marks": [
+     {
+      "line": 2,
+      "from": 4,
+      "to": 17,
+      "label": "dict → str"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Json loads goes back. Text in, dictionary out!",
+   "cap": "json.loads goes back. Text in, dict out!",
+   "scene": {
+    "type": "code",
+    "file": "weather.py",
+    "code": [
+     "import json",
+     "s = '{\"city\": \"Karachi\"}'",
+     "d = json.loads(s)",
+     "print(d[\"city\"])"
+    ],
+    "marks": [
+     {
+      "line": 2,
+      "from": 4,
+      "to": 17,
+      "label": "str → dict"
+     }
+    ],
+    "out": "Karachi"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "import json",
+     "s = json.dumps({\"rs\": 500})",
+     "print(s[0])"
+    ],
+    "options": [
+     "rs",
+     "Error",
+     "{"
+    ],
+    "answer": 2,
+    "glow": [
+     2
+    ],
+    "tags": [
+     {
+      "line": 1,
+      "text": "'{\"rs\": 500}'",
+      "color": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "The curly bracket!",
+   "cap": "The { bracket!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! S is a string now, so index zero is its first character!",
+   "cap": "Yes! s is a string now, so index 0 is its first character!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level forty six, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 46 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

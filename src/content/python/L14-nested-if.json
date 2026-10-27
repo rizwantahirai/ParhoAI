@@ -1,0 +1,26 @@
+{
+ "level": 14, "of": 50, "title": "Nested if", "next": "while loops",
+ "keywords": ["if", "else", "nested if"],
+ "cover": {"emoji": "🚗", "big": "nested if", "sub": "explained with a Careem ride"},
+ "lines": [
+  {"who": "student", "say": "My Careem is here, but I only have two hundred rupees!", "cap": "My Careem is here, but I only have 200 rupees!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "🚗", "banner": "CAREEM ARRIVED", "bannerColor": "jade"}},
+  {"who": "teacher", "say": "Two checks! Is the ride here? Then, enough cash? That's a nested if!", "cap": "Two checks! Is the ride here? Then, enough cash? That's a nested if!",
+   "with": {"emoji": "💸", "banner": "FARE: Rs 250", "bannerColor": "red", "word": "nested if"}},
+  {"who": "teacher", "say": "Level fourteen! Nested if!", "cap": "Level 14! Nested if!", "scene": {"type": "level", "concepts": ["if inside if", "indentation"]}},
+  {"who": "teacher", "say": "An if inside an if! The inner one runs only if the outer is true.", "cap": "An if inside an if! The inner one runs only if the outer is True.",
+   "scene": {"type": "code", "file": "ride.py", "code": ["arrived = True", "cash = 200", "", "if arrived:", "    if cash >= 250:", "        print(\"Pay and go\")", "    else:", "        print(\"Call Ammi!\")"], "out": "Call Ammi!"}},
+  {"who": "student", "say": "Why eight spaces on that print?", "cap": "Why 8 spaces on that print?",
+   "with": {"marks": [{"line": 7, "from": 0, "to": 8, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Each if adds four more! Eight spaces means it lives inside both!", "cap": "Each if adds 4 more! 8 spaces means it lives inside BOTH!",
+   "with": {"marks": [{"line": 3, "from": 0, "to": 11, "label": "← outer"}, {"line": 4, "from": 4, "to": 19, "label": "← inner"}, {"line": 7, "from": 0, "to": 8, "label": "← 8 spaces", "dash": true}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "eidi.py", "code": ["eidi = 500", "", "if eidi > 100:", "    if eidi > 1000:", "        print(\"Biryani\")", "    else:", "        print(\"Samosa\")"],
+             "options": ["Samosa", "Biryani", "Nothing"], "answer": 0, "glow": [5, 6], "dim": [4],
+             "tags": [{"line": 2, "text": "500 > 100 ✓", "color": "jade"}, {"line": 3, "text": "500 > 1000 ✗", "color": "red"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Samosa! The outer check is true, the inner one is false!", "cap": "Samosa! The outer check is True, the inner one is False!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! The outer if lets us in, then the inner else runs!", "cap": "Yes! The outer if lets us in, then the inner else runs!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level fifteen, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 15 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "level": 41,
+ "of": 50,
+ "title": "Recursion",
+ "next": "try / except",
+ "keywords": [
+  "def",
+  "return",
+  "if"
+ ],
+ "cover": {
+  "emoji": "🌙",
+  "big": "Recursion",
+  "sub": "a function that calls itself"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "Three, two, one... Iftar! Everyone at the table counts down!",
+   "cap": "Three, two, one... Iftar! Everyone at the table counts down!",
+   "mood": "surprised",
+   "scene": {
+    "type": "hook",
+    "emoji": "🌙",
+    "banner": "IFTAR IN 3...",
+    "bannerColor": "violet"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "A countdown is just one step, repeated. A function calling itself. Recursion!",
+   "cap": "A countdown is one step, repeated. A function calling itself: recursion!",
+   "with": {
+    "word": "recursion"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level forty one! Recursion!",
+   "cap": "Level 41! Recursion!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "recursion",
+     "base case"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Countdown prints n, then calls itself with n minus one!",
+   "cap": "countdown prints n, then calls itself with n - 1!",
+   "scene": {
+    "type": "code",
+    "file": "iftar.py",
+    "code": [
+     "def countdown(n):",
+     "    if n == 0:",
+     "        print(\"Iftar!\")",
+     "        return",
+     "    print(n)",
+     "    countdown(n - 1)",
+     "",
+     "countdown(2)"
+    ],
+    "out": "2\n1\nIftar!"
+   }
+  },
+  {
+   "who": "student",
+   "say": "Calling itself? Won't it run forever?",
+   "cap": "Calling itself? Won't it run FOREVER?",
+   "with": {
+    "marks": [
+     {
+      "line": 5,
+      "from": 4,
+      "to": 20,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Not with a base case! When n hits zero, it stops!",
+   "cap": "Not with a base case! When n hits 0, it stops!",
+   "with": {
+    "marks": [
+     {
+      "line": 1,
+      "from": 4,
+      "to": 14,
+      "label": "← base case"
+     },
+     {
+      "line": 5,
+      "from": 4,
+      "to": 20,
+      "label": "← smaller",
+      "dash": true
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "No base case? Python gives up with a recursion error!",
+   "cap": "No base case? Python gives up with a RecursionError!",
+   "scene": {
+    "type": "code",
+    "file": "oops.py",
+    "code": [
+     "def again():",
+     "    again()",
+     "",
+     "again()"
+    ],
+    "err": true,
+    "out": "RecursionError: maximum recursion depth exceeded"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "def total(n):",
+     "    if n == 1:",
+     "        return 1",
+     "    return n + total(n - 1)",
+     "",
+     "print(total(3))"
+    ],
+    "options": [
+     "6",
+     "3",
+     "Error"
+    ],
+    "answer": 0,
+    "glow": [
+     3
+    ],
+    "tags": [
+     {
+      "line": 3,
+      "text": "3 + 2 + 1",
+      "color": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Six!",
+   "cap": "6!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Three plus two plus one, and the base case stops it!",
+   "cap": "Yes! 3 + 2 + 1, and the base case stops it!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level forty two, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 42 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

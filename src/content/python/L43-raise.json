@@ -1,0 +1,173 @@
+{
+ "level": 43,
+ "of": 50,
+ "title": "raise",
+ "next": "Files: read and write",
+ "keywords": [
+  "raise",
+  "ValueError",
+  "try",
+  "except"
+ ],
+ "cover": {
+  "emoji": "📱",
+  "big": "raise",
+  "sub": "throw your own errors"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "My cousin tried to recharge minus one hundred rupees. And the app said, done!",
+   "cap": "My cousin tried to recharge -100 rupees. And the app said: done!",
+   "mood": "surprised",
+   "scene": {
+    "type": "hook",
+    "emoji": "📱",
+    "banner": "RECHARGE: Rs -100",
+    "bannerColor": "red"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "That should be an error! Make your own, with raise!",
+   "cap": "That should be an error! Make your own, with raise!",
+   "with": {
+    "word": "raise"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level forty three! Raise!",
+   "cap": "Level 43! raise!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "raise",
+     "ValueError"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Minus amount? Raise a value error, with your own message!",
+   "cap": "Minus amount? raise a ValueError, with your own message!",
+   "scene": {
+    "type": "code",
+    "file": "recharge.py",
+    "code": [
+     "def recharge(rs):",
+     "    if rs < 0:",
+     "        raise ValueError(\"Minus!\")",
+     "    print(\"Done:\", rs)",
+     "",
+     "recharge(-100)"
+    ],
+    "err": true,
+    "marks": [
+     {
+      "line": 2,
+      "from": 8,
+      "to": 13,
+      "label": "← stop!"
+     }
+    ],
+    "out": "ValueError: Minus!"
+   }
+  },
+  {
+   "who": "student",
+   "say": "Wait, why crash my own code on purpose?",
+   "cap": "Wait, why crash my own code on purpose?",
+   "with": {
+    "marks": [
+     {
+      "line": 2,
+      "from": 8,
+      "to": 13,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "A loud error now beats wrong money later! And try, except can still catch it.",
+   "cap": "A loud error now beats wrong money later! And try/except can still catch it.",
+   "with": {
+    "marks": [
+     {
+      "line": 2,
+      "from": 14,
+      "to": 34,
+      "label": "← your message"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "def eidi(rs):",
+     "    if rs > 5000:",
+     "        raise ValueError",
+     "    return rs",
+     "try:",
+     "    print(eidi(9000))",
+     "except ValueError:",
+     "    print(\"Too much!\")"
+    ],
+    "options": [
+     "9000",
+     "Too much!",
+     "Error"
+    ],
+    "answer": 1,
+    "glow": [
+     6,
+     7
+    ],
+    "tags": [
+     {
+      "line": 1,
+      "text": "9000 > 5000",
+      "color": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Too much!",
+   "cap": "Too much!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Nine thousand eidi raises the error, and except catches it!",
+   "cap": "Yes! 9000 eidi raises the error, and except catches it!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level forty four, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 44 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

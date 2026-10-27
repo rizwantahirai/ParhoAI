@@ -1,0 +1,27 @@
+{
+ "level": 9, "of": 50, "title": "+= shortcuts", "next": "Comparisons: True or False",
+ "keywords": ["+=", "-=", "*=", "balance"],
+ "cover": {"emoji": "📱", "big": "+=", "sub": "explained with mobile balance"},
+ "lines": [
+  {"who": "student", "say": "I just loaded fifty rupees on my phone!", "cap": "I just loaded 50 rupees on my phone!", "mood": "happy",
+   "scene": {"type": "hook", "emoji": "📱", "banner": "BALANCE: Rs 100", "bannerColor": "blue"}},
+  {"who": "teacher", "say": "So balance becomes balance plus fifty. There's a shortcut for that!", "cap": "So balance becomes balance + 50. There's a shortcut for that!",
+   "with": {"banner": "BALANCE: Rs 150", "bannerColor": "jade", "word": "+="}},
+  {"who": "teacher", "say": "Level nine! Plus equals shortcuts!", "cap": "Level 9! += shortcuts!", "scene": {"type": "level", "concepts": ["+=", "-=", "*="]}},
+  {"who": "teacher", "say": "The long way. Take balance, add fifty, store it back.", "cap": "The long way. Take balance, add 50, store it back.",
+   "scene": {"type": "code", "file": "balance.py", "code": ["balance = 100", "balance = balance + 50", "print(balance)"], "out": "150"}},
+  {"who": "teacher", "say": "The shortcut! Plus equals. Same answer, less typing!", "cap": "The shortcut! +=. Same answer, less typing!",
+   "scene": {"type": "code", "file": "balance.py", "code": ["balance = 100", "balance += 50", "print(balance)"], "out": "150"}},
+  {"who": "student", "say": "Does it work for minus too?", "cap": "Does it work for minus too?",
+   "with": {"marks": [{"line": 1, "from": 8, "to": 10, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Yes! Minus equals, times equals, all of them. Do the maths, then store!", "cap": "Yes! -=, *=, all of them. Do the maths, then store!",
+   "with": {"marks": [{"line": 1, "from": 8, "to": 10, "label": "← add + store"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["balance = 100", "balance + 50", "print(balance)"],
+             "options": ["150", "Error", "100"], "answer": 2, "glow": [2], "dim": [1], "tags": [{"line": 1, "text": "not saved!", "color": "red"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Still one hundred!", "cap": "Still 100!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! No equals sign, so nothing got stored!", "cap": "Yes! No = sign, so nothing got stored!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level ten, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 10 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

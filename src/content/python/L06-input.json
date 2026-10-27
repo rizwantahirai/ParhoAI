@@ -1,0 +1,28 @@
+{
+ "level": 6, "of": 50, "title": "input()", "next": "f-strings: smart text",
+ "keywords": ["input", "input()", "int", "int()"],
+ "cover": {"emoji": "💍", "big": "input()", "sub": "explained with a shaadi RSVP"},
+ "lines": [
+  {"who": "student", "say": "My cousin's wedding! The RSVP app asks how many guests are coming.", "cap": "My cousin's wedding! The RSVP app asks how many guests are coming.", "mood": "happy",
+   "scene": {"type": "hook", "emoji": "💍", "banner": "SHAADI RSVP", "bannerColor": "violet"}},
+  {"who": "teacher", "say": "Your code can ask questions too! With input!", "cap": "Your code can ask questions too! With input()!",
+   "with": {"word": "input()"}},
+  {"who": "teacher", "say": "Level six! Input!", "cap": "Level 6! input!", "scene": {"type": "level", "concepts": ["input()"]}},
+  {"who": "teacher", "say": "Input waits for the user to type. Their answer goes into the box!", "cap": "input() waits for the user to type. Their answer goes into the box!",
+   "scene": {"type": "code", "file": "rsvp.py", "code": ["name = input(\"Name? \")", "print(\"Welcome\", name)"], "inputs": ["Fatima"], "out": ["Name? Fatima", "Welcome Fatima"]}},
+  {"who": "student", "say": "Wait, does input give a number, or text?", "cap": "Wait, does input give a number, or text?",
+   "with": {"marks": [{"line": 0, "from": 7, "to": 12, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Always text! Even when they type a number. So wrap it in int!", "cap": "ALWAYS text! Even when they type a number. So wrap it in int()!",
+   "with": {"marks": [{"line": 0, "from": 7, "to": 12, "label": "← always str"}]}},
+  {"who": "teacher", "say": "Fifty guests, plus two surprise cousins. Fifty two!", "cap": "50 guests + 2 surprise cousins = 52!",
+   "scene": {"type": "code", "file": "rsvp.py", "code": ["guests = input(\"Guests? \")", "print(int(guests) + 2)"], "inputs": ["50"], "out": ["Guests? 50", "52"],
+             "marks": [{"line": 1, "from": 6, "to": 17, "label": "← number!"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["n = input(\"Guests? \")", "print(n + 2)"], "inputs": ["50"],
+             "options": ["52", "502", "Error"], "answer": 2, "glow": [1], "tags": [{"line": 1, "text": "str + int ✗", "color": "red"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Error! Input gives text!", "cap": "Error! input gives text!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Text plus a number crashes. Use int first!", "cap": "Yes! Text + a number crashes. Use int() first!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level seven, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 7 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

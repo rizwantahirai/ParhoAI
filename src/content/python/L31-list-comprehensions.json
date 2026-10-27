@@ -1,0 +1,27 @@
+{
+ "level": 31, "of": 50, "title": "List comprehensions", "next": "Dict and set comprehensions",
+ "keywords": ["for", "in", "if"],
+ "cover": {"emoji": "📝", "big": "list comp", "sub": "explained with grace marks"},
+ "lines": [
+  {"who": "student", "say": "Sir gave everyone five grace marks! Yay!", "cap": "Sir gave everyone 5 grace marks! Yay!", "mood": "happy",
+   "scene": {"type": "hook", "emoji": "📝", "banner": "RESULT DAY", "bannerColor": "jade"}},
+  {"who": "teacher", "say": "Add five to every mark? One line! A list comprehension!", "cap": "Add 5 to every mark? One line! A list comprehension!",
+   "with": {"word": "[ for ]"}},
+  {"who": "teacher", "say": "Level thirty one! List comprehensions!", "cap": "Level 31! List comprehensions!", "scene": {"type": "level", "concepts": ["[x for x in]", "if filter"]}},
+  {"who": "teacher", "say": "Square brackets. The new value first, then the loop!", "cap": "Square brackets. The new value first, then the loop!",
+   "scene": {"type": "code", "file": "marks.py", "code": ["marks = [40, 72, 55]", "new = [m + 5 for m in marks]", "print(new)"], "out": "[45, 77, 60]"}},
+  {"who": "student", "say": "How do I even read that?", "cap": "How do I even READ that?", "with": {"marks": [{"line": 1, "from": 6, "to": 28, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Out loud! M plus five, for every m in marks!", "cap": "Out loud! m + 5, for every m in marks!",
+   "with": {"marks": [{"line": 1, "from": 7, "to": 12, "label": "new value"}, {"line": 1, "from": 13, "to": 27, "label": "loop", "dash": true}]}},
+  {"who": "teacher", "say": "Add an if, and it filters too! Only the passes stay!", "cap": "Add an if, and it filters too! Only the passes stay!",
+   "scene": {"type": "code", "file": "marks.py", "code": ["ms = [40, 72, 55]", "ok = [m for m in ms if m >= 50]", "print(ok)"], "out": "[72, 55]",
+             "marks": [{"line": 1, "from": 20, "to": 30, "label": "← filter", "color": "gold"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["nums = [1, 2, 3, 4]", "big = [n * n for n in nums", "       if n > 2]", "print(big)"],
+             "options": ["[9, 16]", "[3, 4]", "[1, 4]"], "answer": 0, "glow": [1, 2], "tags": [{"line": 2, "text": "3, 4 pass", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Nine and sixteen!", "cap": "[9, 16]!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Three and four pass the filter, then get squared!", "cap": "Yes! 3 and 4 pass the filter, then get squared!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level thirty two, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 32 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

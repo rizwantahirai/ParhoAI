@@ -1,0 +1,26 @@
+{
+ "level": 30, "of": 50, "title": "enumerate & zip", "next": "List comprehensions",
+ "keywords": ["enumerate", "enumerate()", "zip", "zip()", "for"],
+ "cover": {"emoji": "🏫", "big": "enumerate", "sub": "explained with roll call"},
+ "lines": [
+  {"who": "student", "say": "Roll call! Hamza, number one. Fatima, number two!", "cap": "Roll call! Hamza, number 1. Fatima, number 2!", "mood": "happy",
+   "scene": {"type": "hook", "emoji": "🏫", "banner": "ROLL CALL", "bannerColor": "blue"}},
+  {"who": "teacher", "say": "Numbering by hand? Enumerate counts for you!", "cap": "Numbering by hand? enumerate counts for you!",
+   "with": {"word": "enumerate()"}},
+  {"who": "teacher", "say": "Level thirty! Enumerate, and zip!", "cap": "Level 30! enumerate and zip!", "scene": {"type": "level", "concepts": ["enumerate()", "zip()"]}},
+  {"who": "teacher", "say": "Enumerate gives you a number, and the item!", "cap": "enumerate gives you a number, and the item!",
+   "scene": {"type": "code", "file": "roll.py", "code": ["kids = [\"Hamza\", \"Fatima\"]", "for n, k in enumerate(kids, 1):", "    print(n, k)"], "out": ["1 Hamza", "2 Fatima"]}},
+  {"who": "student", "say": "What's that one at the end?", "cap": "What's that 1 at the end?", "with": {"marks": [{"line": 1, "from": 28, "to": 29, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "The start number! Without it, counting starts at zero!", "cap": "The start number! Without it, counting starts at 0!",
+   "with": {"marks": [{"line": 1, "from": 28, "to": 29, "label": "← start"}]}},
+  {"who": "teacher", "say": "And zip? It pairs two lists, side by side!", "cap": "And zip? It pairs two lists, side by side!",
+   "scene": {"type": "code", "file": "roll.py", "code": ["kids = [\"Hamza\", \"Fatima\"]", "marks = [88, 92]", "for k, m in zip(kids, marks):", "    print(k, m)"], "out": ["Hamza 88", "Fatima 92"]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "temps.py", "code": ["c = [\"Lhr\", \"Khi\", \"Isb\"]", "t = [41, 34]", "n = 0", "for x, y in zip(c, t):", "    n += 1", "print(n)"],
+             "options": ["3", "Error", "2"], "answer": 2, "glow": [1], "tags": [{"line": 1, "text": "only 2!", "color": "coral"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Two!", "cap": "2!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Zip stops at the shorter list!", "cap": "Yes! zip stops at the SHORTER list!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level thirty one, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 31 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

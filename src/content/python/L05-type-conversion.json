@@ -1,0 +1,28 @@
+{
+ "level": 5, "of": 50, "title": "Type conversion", "next": "input(): let the user talk",
+ "keywords": ["int", "int()", "str()", "float()", "TypeError"],
+ "cover": {"emoji": "🛺", "big": "int()", "sub": "explained with rickshaw fare"},
+ "lines": [
+  {"who": "student", "say": "Rickshaw fare is two hundred, plus fifty tip. And my code crashed!", "cap": "Rickshaw fare is 200, plus 50 tip. And my code CRASHED!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "🛺", "banner": "FARE: Rs 200", "bannerColor": "coral"}},
+  {"who": "teacher", "say": "Because your two hundred was text! Let's convert it!", "cap": "Because your 200 was text! Let's convert it!",
+   "with": {"word": "int()"}},
+  {"who": "teacher", "say": "Level five! Type conversion!", "cap": "Level 5! Type conversion!", "scene": {"type": "level", "concepts": ["int()", "float()", "str()"]}},
+  {"who": "teacher", "say": "Text plus a number? Python says no!", "cap": "Text + a number? Python says NO!",
+   "scene": {"type": "code", "file": "fare.py", "code": ["fare = \"200\"", "print(fare + 50)"], "out": "TypeError: str + int ✗", "err": true}},
+  {"who": "student", "say": "But it looks like a number!", "cap": "But it looks like a number!",
+   "with": {"marks": [{"line": 0, "from": 7, "to": 12, "color": "coral", "blink": true}]}},
+  {"who": "teacher", "say": "Quotes make it text! Wrap it in int, and it's a real number again!", "cap": "Quotes make it text! Wrap it in int(), and it's a real number again!",
+   "with": {"marks": [{"line": 0, "from": 7, "to": 12, "label": "← str"}]}},
+  {"who": "teacher", "say": "Two hundred plus fifty. Two fifty! Float and str convert the same way!", "cap": "200 + 50 = 250! float() and str() convert the same way!",
+   "scene": {"type": "code", "file": "fare.py", "code": ["fare = \"200\"", "print(int(fare) + 50)"], "out": "250",
+             "marks": [{"line": 1, "from": 6, "to": 15, "label": "← number!"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["print(int(\"7\") + 3)"],
+             "options": ["10", "73", "Error"], "answer": 0, "glow": [0], "tags": [{"line": 0, "text": "7 + 3", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Ten! It's a real number now!", "cap": "10! It's a real number now!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Int turned the text seven into a real seven!", "cap": "Yes! int() turned the text \"7\" into a real 7!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level six, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 6 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

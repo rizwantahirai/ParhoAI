@@ -1,0 +1,26 @@
+{
+ "level": 24, "of": 50, "title": "List slicing & in", "next": "Tuples and unpacking",
+ "keywords": ["in", "[-3:]", "[1:3]", "True"],
+ "cover": {"emoji": "🏆", "big": "list[1:3]", "sub": "explained with team selection"},
+ "lines": [
+  {"who": "student", "say": "Selection day! Coach wants Hamza's last three scores. Fast!", "cap": "Selection day! Coach wants Hamza's last 3 scores. Fast!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "🏆", "banner": "SELECTION DAY", "bannerColor": "gold"}},
+  {"who": "teacher", "say": "Slice the list, just like a string! And ask questions with in!", "cap": "Slice the list, just like a string! And ask questions with in!",
+   "with": {"emoji": "✂️", "banner": "SLICE + in", "bannerColor": "jade", "word": "in"}},
+  {"who": "teacher", "say": "Level twenty four! List slicing, and in!", "cap": "Level 24! List slicing and in!", "scene": {"type": "level", "concepts": ["list[a:b]", "in"]}},
+  {"who": "teacher", "say": "Minus three, colon. That means from the third last, all the way to the end!", "cap": "-3 : means from the 3rd last, all the way to the end!",
+   "scene": {"type": "code", "file": "hamza.py", "code": ["runs = [12, 0, 45, 30, 8]", "", "print(runs[-3:])"], "out": "[45, 30, 8]"}},
+  {"who": "student", "say": "Wait, did he get a duck? How do I check for zero?", "cap": "Wait, did he get a duck? How do I check for 0?",
+   "with": {"marks": [{"line": 0, "from": 12, "to": 13, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Use in! It answers with True, or False.", "cap": "Use in! It answers with True or False.",
+   "scene": {"type": "code", "file": "hamza.py", "code": ["runs = [12, 0, 45, 30, 8]", "", "print(0 in runs)"], "out": "True",
+             "marks": [{"line": 2, "from": 8, "to": 10, "label": "← is it there?"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "over.py", "code": ["runs = [4, 6, 1, 0, 6]", "print(runs[1:3])"],
+             "options": ["[6, 1, 0]", "[6, 1]", "[4, 6]"], "answer": 1, "glow": [1], "tags": [{"line": 1, "text": "3 not included", "color": "coral"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Six and one! Index three is left out!", "cap": "6 and 1! Index 3 is left out!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Same rule as strings. The end index is never included!", "cap": "Yes! Same rule as strings. The end index is NEVER included!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level twenty five, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 25 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

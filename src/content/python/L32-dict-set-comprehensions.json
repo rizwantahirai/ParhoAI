@@ -1,0 +1,26 @@
+{
+ "level": 32, "of": 50, "title": "Dict & set comprehensions", "next": "Functions",
+ "keywords": ["for", "in", "len", "len()"],
+ "cover": {"emoji": "🥭", "big": "{comp}", "sub": "explained with mango prices"},
+ "lines": [
+  {"who": "student", "say": "Every mango at this stall is three fifty a kilo!", "cap": "Every mango at this stall is Rs 350 a kilo!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "🥭", "banner": "MANGO SEASON", "bannerColor": "gold"}},
+  {"who": "teacher", "say": "A price for every mango? Build the dictionary in one line!", "cap": "A price for every mango? Build the dictionary in one line!",
+   "with": {"word": "{k: v for}"}},
+  {"who": "teacher", "say": "Level thirty two! Dict, and set comprehensions!", "cap": "Level 32! Dict and set comprehensions!", "scene": {"type": "level", "concepts": ["{k: v for}", "{x for}"]}},
+  {"who": "teacher", "say": "Same trick, curly brackets! Key, colon, value, then the loop!", "cap": "Same trick, curly brackets! Key, colon, value, then the loop!",
+   "scene": {"type": "code", "file": "mango.py", "code": ["mangoes = [\"Chaunsa\", \"Sindhri\"]", "rate = {m: 350 for m in mangoes}", "print(rate)"], "out": "{'Chaunsa': 350, 'Sindhri': 350}"}},
+  {"who": "student", "say": "Why the colon in there?", "cap": "Why the colon in there?", "with": {"marks": [{"line": 1, "from": 8, "to": 14, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Colon means key and value. That makes a dictionary!", "cap": "Colon means key AND value. That makes a dictionary!",
+   "with": {"marks": [{"line": 1, "from": 8, "to": 9, "label": "key"}, {"line": 1, "from": 11, "to": 14, "label": "value", "dash": true}]}},
+  {"who": "teacher", "say": "No colon? You get a set! All three have six letters, so just one six!", "cap": "No colon? You get a set! All 3 have 6 letters, so just one 6!",
+   "scene": {"type": "code", "file": "cities.py", "code": ["cities = [\"Lahore\", \"Quetta\",", "          \"Multan\"]", "lens = {len(c) for c in cities}", "print(lens)"], "out": "{6}"}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["nums = [3, 6, 9, 10]", "r = {n % 3 for n in nums}", "print(r)"],
+             "options": ["{0, 0, 0, 1}", "Error", "{0, 1}"], "answer": 2, "glow": [1], "tags": [{"line": 1, "text": "{ } = set", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Zero and one!", "cap": "{0, 1}!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! It's a set, so the extra zeros vanish!", "cap": "Yes! It's a set, so the extra 0s vanish!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level thirty three, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 33 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

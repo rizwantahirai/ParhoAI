@@ -1,0 +1,181 @@
+{
+ "level": 38,
+ "of": 50,
+ "title": "lambda",
+ "next": "map() and filter()",
+ "keywords": [
+  "lambda",
+  "def",
+  "return"
+ ],
+ "cover": {
+  "emoji": "🥭",
+  "big": "lambda",
+  "sub": "one-line functions with mangoes"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "Mangoes, three hundred a kilo! Do I really need a whole def for this?",
+   "cap": "Mangoes, 300 a kilo! Do I really need a whole def for this?",
+   "mood": "confused",
+   "scene": {
+    "type": "hook",
+    "emoji": "🥭",
+    "banner": "AAM: Rs 300/kg",
+    "bannerColor": "gold"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Nope! A tiny function, in one line. Lambda!",
+   "cap": "Nope! A tiny function, in one line. lambda!",
+   "with": {
+    "word": "lambda"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level thirty eight! Lambda!",
+   "cap": "Level 38! lambda!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "lambda",
+     "one line"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Lambda, the input, a colon, then the answer. Two kilos? Six hundred!",
+   "cap": "lambda, the input, a colon, then the answer. 2 kilos? 600!",
+   "scene": {
+    "type": "code",
+    "file": "aam.py",
+    "code": [
+     "price = lambda kg: kg * 300",
+     "print(price(2))"
+    ],
+    "out": "600"
+   }
+  },
+  {
+   "who": "student",
+   "say": "Wait, where is the return?",
+   "cap": "Wait, where is the return?",
+   "with": {
+    "marks": [
+     {
+      "line": 0,
+      "from": 19,
+      "to": 27,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "No return needed! Lambda returns whatever comes after the colon!",
+   "cap": "No return needed! lambda returns whatever comes after the colon!",
+   "with": {
+    "marks": [
+     {
+      "line": 0,
+      "from": 15,
+      "to": 17,
+      "label": "← input"
+     },
+     {
+      "line": 0,
+      "from": 19,
+      "to": 27,
+      "label": "← returned"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Same function, def style versus lambda style. Lambda is the short one!",
+   "cap": "Same function: def style vs lambda style. lambda is the short one!",
+   "scene": {
+    "type": "code",
+    "file": "aam.py",
+    "code": [
+     "def price(kg):",
+     "    return kg * 300",
+     "",
+     "price = lambda kg: kg * 300"
+    ],
+    "typing": false,
+    "glow": [
+     3
+    ],
+    "dim": [
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "double = lambda x: x * 2",
+     "print(double(\"ha\"))"
+    ],
+    "options": [
+     "haha",
+     "4",
+     "Error"
+    ],
+    "answer": 0,
+    "glow": [
+     0
+    ],
+    "tags": [
+     {
+      "line": 1,
+      "text": "\"ha\" * 2",
+      "color": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Ha ha!",
+   "cap": "haha!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Lambda just runs x times two, and text times two repeats it!",
+   "cap": "Yes! lambda just runs x * 2, and text * 2 repeats it!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level thirty nine, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 39 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

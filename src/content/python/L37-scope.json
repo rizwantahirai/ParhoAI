@@ -1,0 +1,25 @@
+{
+ "level": 37, "of": 50, "title": "Scope", "next": "lambda",
+ "keywords": ["def", "local", "global", "NameError"],
+ "cover": {"emoji": "📶", "big": "scope", "sub": "explained with home WiFi"},
+ "lines": [
+  {"who": "student", "say": "My home WiFi works perfectly. At uni? Nothing!", "cap": "My home WiFi works perfectly. At uni? NOTHING!", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "📶", "banner": "NO SIGNAL", "bannerColor": "red"}},
+  {"who": "teacher", "say": "Some things only work in their own place! Python calls that scope!", "cap": "Some things only work in their own place! Python calls that scope!",
+   "with": {"word": "scope"}},
+  {"who": "teacher", "say": "Level thirty seven! Scope!", "cap": "Level 37! Scope!", "scene": {"type": "level", "concepts": ["local", "global"]}},
+  {"who": "teacher", "say": "Balance is outside, so it's global. Cost is inside the function!", "cap": "balance is outside, so it's global. cost is inside the function!",
+   "scene": {"type": "code", "file": "balance.py", "code": ["balance = 500", "def call():", "    cost = 20", "    print(balance - cost)", "", "call()", "print(cost)"],
+             "out": ["480", "NameError: cost"], "err": true}},
+  {"who": "student", "say": "Why does the last line crash?", "cap": "Why does the LAST line crash?", "with": {"marks": [{"line": 6, "from": 6, "to": 10, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Cost is local! It disappears when the function ends!", "cap": "cost is local! It disappears when the function ends!",
+   "with": {"marks": [{"line": 2, "from": 4, "to": 8, "label": "local"}, {"line": 0, "from": 0, "to": 7, "label": "global", "dash": true}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["x = 10", "def change():", "    x = 99", "", "change()", "print(x)"],
+             "options": ["10", "99", "Error"], "answer": 0, "glow": [0, 5], "dim": [2], "tags": [{"line": 2, "text": "new local x", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Ten!", "cap": "10!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Inside, x is a new local box. The global x stays ten!", "cap": "Yes! Inside, x is a new LOCAL box. The global x stays 10!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level thirty eight, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 38 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

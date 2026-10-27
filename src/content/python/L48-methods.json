@@ -1,0 +1,170 @@
+{
+ "level": 48,
+ "of": 50,
+ "title": "Methods",
+ "next": "Inheritance",
+ "keywords": [
+  "def",
+  "self",
+  "class"
+ ],
+ "cover": {
+  "emoji": "📞",
+  "big": "Methods",
+  "sub": "functions that live inside a class"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "Every call eats ten rupees of my mobile balance!",
+   "cap": "Every call eats 10 rupees of my mobile balance!",
+   "mood": "surprised",
+   "scene": {
+    "type": "hook",
+    "emoji": "📞",
+    "banner": "BALANCE: Rs 50",
+    "bannerColor": "coral"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "An action your phone does? Put it inside the class. A method!",
+   "cap": "An action your phone does? Put it inside the class. A method!",
+   "with": {
+    "word": "method"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level forty eight! Methods!",
+   "cap": "Level 48! Methods!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "method",
+     "self"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Call is a method. P dot call cuts ten rupees. Forty left!",
+   "cap": "call is a method. p.call() cuts 10 rupees. 40 left!",
+   "scene": {
+    "type": "code",
+    "file": "phone.py",
+    "code": [
+     "class Phone:",
+     "    def __init__(self, rs):",
+     "        self.rs = rs",
+     "    def call(self):",
+     "        self.rs -= 10",
+     "p = Phone(50)",
+     "p.call()",
+     "print(p.rs)"
+    ],
+    "out": "40"
+   }
+  },
+  {
+   "who": "student",
+   "say": "Why does call need self, if I never pass it?",
+   "cap": "Why does call need self, if I never pass it?",
+   "with": {
+    "marks": [
+     {
+      "line": 3,
+      "from": 13,
+      "to": 17,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Python passes it for you! P dot call means self is p.",
+   "cap": "Python passes it for you! p.call() means self is p.",
+   "with": {
+    "marks": [
+     {
+      "line": 3,
+      "from": 13,
+      "to": 17,
+      "label": "← p"
+     },
+     {
+      "line": 6,
+      "from": 0,
+      "to": 1,
+      "label": "→ self",
+      "dash": true
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "class Shop:",
+     "    def __init__(self, p):",
+     "        self.p = p",
+     "    def sale():",
+     "        return self.p // 2",
+     "s = Shop(800)",
+     "print(s.sale())"
+    ],
+    "options": [
+     "400",
+     "800",
+     "Error"
+    ],
+    "answer": 2,
+    "glow": [
+     3
+    ],
+    "tags": [
+     {
+      "line": 3,
+      "text": "no self!",
+      "color": "red"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "Error!",
+   "cap": "Error!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Python passed s as self, but sale had no slot for it!",
+   "cap": "Yes! Python passed s as self, but sale() had no slot for it!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level forty nine, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 49 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

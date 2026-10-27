@@ -1,0 +1,180 @@
+{
+ "level": 39,
+ "of": 50,
+ "title": "map & filter",
+ "next": "sorted() with key",
+ "keywords": [
+  "map",
+  "filter",
+  "list",
+  "lambda"
+ ],
+ "cover": {
+  "emoji": "📝",
+  "big": "map filter",
+  "sub": "explained with exam grace marks"
+ },
+ "lines": [
+  {
+   "who": "student",
+   "say": "Sir is giving five grace marks to the whole class!",
+   "cap": "Sir is giving 5 grace marks to the WHOLE class!",
+   "mood": "surprised",
+   "scene": {
+    "type": "hook",
+    "emoji": "📝",
+    "banner": "+5 GRACE MARKS",
+    "bannerColor": "jade"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "One change, for every item? That is map! And picking items? Filter!",
+   "cap": "One change for every item? That is map! And picking items? filter!",
+   "with": {
+    "word": "map"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Level thirty nine! Map, and filter!",
+   "cap": "Level 39! map and filter!",
+   "scene": {
+    "type": "level",
+    "concepts": [
+     "map()",
+     "filter()"
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Map runs grace on every mark. Everyone gets plus five!",
+   "cap": "map runs grace on every mark. Everyone gets +5!",
+   "scene": {
+    "type": "code",
+    "file": "marks.py",
+    "code": [
+     "marks = [40, 75, 90]",
+     "grace = lambda m: m + 5",
+     "up = map(grace, marks)",
+     "print(list(up))"
+    ],
+    "out": "[45, 80, 95]"
+   }
+  },
+  {
+   "who": "student",
+   "say": "Why wrap it in list?",
+   "cap": "Why wrap it in list?",
+   "with": {
+    "marks": [
+     {
+      "line": 3,
+      "from": 6,
+      "to": 10,
+      "color": "coral",
+      "blink": true,
+      "label": "?"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Map is lazy! List makes it hand over all the results.",
+   "cap": "map is lazy! list() makes it hand over all the results.",
+   "with": {
+    "marks": [
+     {
+      "line": 3,
+      "from": 6,
+      "to": 14,
+      "label": "← unpack results"
+     }
+    ]
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Filter keeps only the items where the test is True. Forty is out!",
+   "cap": "filter keeps only items where the test is True. 40 is out!",
+   "scene": {
+    "type": "code",
+    "file": "marks.py",
+    "code": [
+     "marks = [40, 75, 90]",
+     "passed = lambda m: m >= 50",
+     "ok = filter(passed, marks)",
+     "print(list(ok))"
+    ],
+    "marks": [
+     {
+      "line": 2,
+      "from": 5,
+      "to": 11,
+      "label": "keeps True ✓"
+     }
+    ],
+    "out": "[75, 90]"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Your turn! Pause, and predict! What prints?",
+   "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {
+    "type": "quiz",
+    "file": "quiz.py",
+    "code": [
+     "n = [5, 12, 8]",
+     "big = map(lambda x: x > 6, n)",
+     "print(list(big))"
+    ],
+    "options": [
+     "[12, 8]",
+     "[5, 12, 8]",
+     "[False, True, True]"
+    ],
+    "answer": 2,
+    "glow": [
+     1
+    ],
+    "tags": [
+     {
+      "line": 1,
+      "text": "map, not filter!",
+      "color": "red"
+     }
+    ]
+   }
+  },
+  {
+   "pause": 2.7
+  },
+  {
+   "who": "student",
+   "say": "False, True, True!",
+   "cap": "[False, True, True]!",
+   "with": {
+    "phase": "pick"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Yes! Map never removes items. It just returns the test result for each!",
+   "cap": "Yes! map never removes items. It returns the test result for each!",
+   "with": {
+    "phase": "reveal"
+   }
+  },
+  {
+   "who": "teacher",
+   "say": "Comment your answer! Comment notes for the cheat sheet! Level forty, tomorrow!",
+   "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 40 tomorrow!",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

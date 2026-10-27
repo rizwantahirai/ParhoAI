@@ -1,0 +1,27 @@
+{
+ "level": 11, "of": 50, "title": "and / or / not", "next": "if / else: decisions",
+ "keywords": ["and", "or", "not", "True", "False"],
+ "cover": {"emoji": "🎮", "big": "and or not", "sub": "explained with Abbu's rules"},
+ "lines": [
+  {"who": "student", "say": "Abbu says I can play only if homework is done, and it's not raining!", "cap": "Abbu says I can play only if homework is done AND it's not raining!", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "🎮", "banner": "ABBU'S RULES", "bannerColor": "violet"}},
+  {"who": "teacher", "say": "Two conditions, one answer! That's and, or, not!", "cap": "Two conditions, one answer! That's and, or, not!",
+   "with": {"word": "and"}},
+  {"who": "teacher", "say": "Level eleven! And, or, not!", "cap": "Level 11! and, or, not!", "scene": {"type": "level", "concepts": ["and", "or", "not"]}},
+  {"who": "teacher", "say": "And needs both sides true. Not flips true and false!", "cap": "and needs both sides True. not flips True and False!",
+   "scene": {"type": "code", "file": "rules.py", "code": ["homework = True", "rain = False", "print(homework and not rain)"], "out": "True"}},
+  {"who": "student", "say": "Wait, not rain becomes true?", "cap": "Wait, not rain becomes True?",
+   "with": {"marks": [{"line": 2, "from": 19, "to": 27, "color": "coral", "blink": true}]}},
+  {"who": "teacher", "say": "Yes! Rain is false, so not rain is true. Go play!", "cap": "Yes! rain is False, so not rain is True. Go play!",
+   "with": {"marks": [{"line": 2, "from": 19, "to": 27, "label": "← True"}]}},
+  {"who": "teacher", "say": "And or? Just one true is enough! New clothes either way!", "cap": "And or? Just ONE True is enough! New clothes either way!",
+   "scene": {"type": "code", "file": "rules.py", "code": ["eid = True", "birthday = False", "print(eid or birthday)"], "out": "True"}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["print(5 > 3 and 2 > 4)"],
+             "options": ["False", "True", "Error"], "answer": 0, "glow": [0], "tags": [{"line": 0, "text": "True and False", "color": "red"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "False! Two is not bigger than four!", "cap": "False! 2 is not bigger than 4!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! And needs both sides true!", "cap": "Yes! and needs BOTH sides True!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level twelve, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 12 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

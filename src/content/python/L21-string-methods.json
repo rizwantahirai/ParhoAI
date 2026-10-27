@@ -1,0 +1,25 @@
+{
+ "level": 21, "of": 50, "title": "String methods", "next": "Lists",
+ "keywords": ["upper", "title", ".upper()", ".title()"],
+ "cover": {"emoji": "🏦", "big": ".upper()", "sub": "explained with a bank form"},
+ "lines": [
+  {"who": "student", "say": "Usman typed his name in small letters. The bank wants capitals!", "cap": "Usman typed his name in small letters. The bank wants CAPITALS!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "🏦", "banner": "BANK FORM", "bannerColor": "violet"}},
+  {"who": "teacher", "say": "No retyping! Strings come with built in tools. String methods!", "cap": "No retyping! Strings come with built-in tools. String methods!",
+   "with": {"emoji": "🧰", "banner": "TOOLS!", "bannerColor": "gold", "word": "methods"}},
+  {"who": "teacher", "say": "Level twenty one! String methods!", "cap": "Level 21! String methods!", "scene": {"type": "level", "concepts": [".upper()", ".title()"]}},
+  {"who": "teacher", "say": "Dot upper makes everything capital. Dot title capitalizes each word!", "cap": ".upper() makes everything CAPITAL. .title() capitalizes each word!",
+   "scene": {"type": "code", "file": "form.py", "code": ["name = \"usman ali\"", "", "print(name.upper())", "print(name.title())"], "out": "USMAN ALI\nUsman Ali"}},
+  {"who": "student", "say": "So did name change forever?", "cap": "So did name change forever?",
+   "with": {"marks": [{"line": 0, "from": 7, "to": 18, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "No! Methods give you a new string. The original stays exactly the same!", "cap": "No! Methods give you a NEW string. The original stays exactly the same!",
+   "with": {"marks": [{"line": 0, "from": 7, "to": 18, "label": "← unchanged"}, {"line": 2, "from": 6, "to": 18, "label": "← new string", "dash": true}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "city.py", "code": ["city = \"karachi\"", "city.upper()", "print(city)"],
+             "options": ["KARACHI", "karachi", "Error"], "answer": 1, "glow": [2], "dim": [1], "tags": [{"line": 1, "text": "not saved!", "color": "coral"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Small karachi! Upper didn't save anything!", "cap": "Small karachi! upper() didn't save anything!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! To keep it, write city equals city dot upper!", "cap": "Yes! To keep it, write city = city.upper()!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level twenty two, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 22 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

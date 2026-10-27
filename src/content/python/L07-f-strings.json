@@ -1,0 +1,27 @@
+{
+ "level": 7, "of": 50, "title": "f-strings", "next": "Math operators",
+ "keywords": ["f", "f-string", "f-strings", "{name}", "{eidi}"],
+ "cover": {"emoji": "💸", "big": "f-strings", "sub": "explained with Eid money"},
+ "lines": [
+  {"who": "student", "say": "Eid Mubarak! I want my code to say exactly how much eidi I got!", "cap": "Eid Mubarak! I want my code to say exactly how much eidi I got!", "mood": "happy",
+   "scene": {"type": "hook", "emoji": "💸", "banner": "EIDI COUNTER", "bannerColor": "jade"}},
+  {"who": "teacher", "say": "Text and variables in one line? That's an f string!", "cap": "Text and variables in one line? That's an f-string!",
+   "with": {"word": "f-string"}},
+  {"who": "teacher", "say": "Level seven! F strings!", "cap": "Level 7! f-strings!", "scene": {"type": "level", "concepts": ["f\"\"", "{ }"]}},
+  {"who": "teacher", "say": "Put f before the quotes. Anything in curly brackets gets filled in!", "cap": "Put f before the quotes. Anything in { } gets filled in!",
+   "scene": {"type": "code", "file": "eidi.py", "code": ["name = \"Zara\"", "eidi = 500", "print(f\"{name} got {eidi}!\")"], "out": "Zara got 500!"}},
+  {"who": "student", "say": "What does that tiny f do?", "cap": "What does that tiny f do?",
+   "with": {"marks": [{"line": 2, "from": 6, "to": 7, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "F means format! It tells Python, fill in the curly brackets!", "cap": "f means format! It tells Python: fill in the { }!",
+   "with": {"marks": [{"line": 2, "from": 6, "to": 7, "label": "← format"}, {"line": 2, "from": 8, "to": 14, "dash": true}]}},
+  {"who": "teacher", "say": "You can even do maths inside! Double eidi!", "cap": "You can even do maths inside! Double eidi!",
+   "scene": {"type": "code", "file": "eidi.py", "code": ["eidi = 500", "print(f\"Double: {eidi * 2}\")"], "out": "Double: 1000"}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["total = 900", "print(\"Bill: {total}\")"],
+             "options": ["Bill: 900", "Bill: {total}", "Error"], "answer": 1, "glow": [1], "tags": [{"line": 1, "text": "no f!", "color": "red"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Curly brackets and all! There's no f!", "cap": "Curly brackets and all! There's no f!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! No f, so the brackets stay plain text!", "cap": "Yes! No f, so the { } stay plain text!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level eight, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 8 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

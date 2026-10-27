@@ -1,0 +1,26 @@
+{
+ "level": 17, "of": 50, "title": "break & continue", "next": "Nested loops",
+ "keywords": ["break", "continue", "for", "range"],
+ "cover": {"emoji": "🌶️", "big": "break", "sub": "explained with gol gappay"},
+ "lines": [
+  {"who": "student", "say": "Gol gappay! But number three is way too spicy!", "cap": "Gol gappay! But number 3 is WAY too spicy!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "🌶️", "banner": "GOL GAPPAY", "bannerColor": "red"}},
+  {"who": "teacher", "say": "So you stop, right there! In Python, that's break!", "cap": "So you stop, right there! In Python, that's break!",
+   "with": {"emoji": "🛑", "banner": "STOP!", "bannerColor": "coral", "word": "break"}},
+  {"who": "teacher", "say": "Level seventeen! Break, and continue!", "cap": "Level 17! break and continue!", "scene": {"type": "level", "concepts": ["break", "continue"]}},
+  {"who": "teacher", "say": "Break exits the loop instantly. No more gol gappay!", "cap": "break exits the loop instantly. No more gol gappay!",
+   "scene": {"type": "code", "file": "gol.py", "code": ["for g in range(1, 6):", "    if g == 3:", "        break", "    print(\"Ate\", g)"], "out": "Ate 1\nAte 2"}},
+  {"who": "student", "say": "But what if I just want to skip one?", "cap": "But what if I just want to SKIP one?",
+   "with": {"marks": [{"line": 2, "from": 8, "to": 13, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Use continue! It skips that round, and the loop keeps going!", "cap": "Use continue! It skips that round, and the loop keeps going!",
+   "scene": {"type": "code", "file": "gol.py", "code": ["for g in range(1, 5):", "    if g == 2:", "        continue", "    print(\"Ate\", g)"], "out": "Ate 1\nAte 3\nAte 4",
+             "marks": [{"line": 2, "from": 8, "to": 16, "label": "← skip 2, keep going"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "runs.py", "code": ["runs = 0", "for b in range(1, 5):", "    if b == 3:", "        continue", "    runs += b", "print(runs)"],
+             "options": ["7", "3", "10"], "answer": 0, "glow": [3], "tags": [{"line": 2, "text": "skip 3", "color": "coral"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Seven! One plus two plus four!", "cap": "7! 1 + 2 + 4!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Continue skips three, but keeps going. Break would give three!", "cap": "Yes! continue skips 3 but keeps going. break would give 3!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level eighteen, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 18 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

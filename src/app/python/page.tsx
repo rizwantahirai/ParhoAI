@@ -17,7 +17,7 @@ export default function Python() {
   return (
     <>
       <PageHead kicker="Free · one concept a day" title="Python for AI/ML"
-        lede="Fifty short reels take you from your first print() to classes and generators. Each one teaches a single idea in about 35 seconds, with a quiz to pause and predict, and a cheat sheet to keep."
+        lede="Fifty interactive lessons take you from your first print() to classes and generators. Each one is a 35-second reel, code you can run, a quiz, and a cheat sheet to keep. All free, all open now."
         meta={[{ k: "Levels", v: "50" }, { k: "Per level", v: "~35 s" }, { k: "Units", v: "6" }, { k: "Cost", v: "Free" }]}
         actions={<>
           <a href="#levels" className="btn-bright">See all 50 levels</a>
@@ -29,9 +29,9 @@ export default function Python() {
           <div className="rounded-lg border border-line-strong border-l-[3px] border-l-jade bg-jade-soft p-6">
             <h2 className="eyebrow">How it works</h2>
             <ul className="mt-3 space-y-1.5 text-[15px] leading-relaxed text-ink">
-              <li><b>Watch</b> today&apos;s reel on Instagram, TikTok, YouTube or Facebook.</li>
-              <li><b>Pause and predict</b> the quiz, then comment your answer.</li>
-              <li><b>Keep the cheat sheet</b>: it unlocks here the same day.</li>
+              <li><b>Watch</b> the 35-second reel for each level.</li>
+              <li><b>Run the code</b> and <b>take the quiz</b> right on the page.</li>
+              <li><b>Keep the cheat sheet</b>, and tick the level off. Your progress is saved in this browser.</li>
             </ul>
             <div className="mt-5"><Socials /></div>
           </div>

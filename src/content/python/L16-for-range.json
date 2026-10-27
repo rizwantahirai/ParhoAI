@@ -1,0 +1,26 @@
+{
+ "level": 16, "of": 50, "title": "for & range()", "next": "break and continue",
+ "keywords": ["for", "in", "range", "range()"],
+ "cover": {"emoji": "✏️", "big": "for loop", "sub": "explained with school punishment"},
+ "lines": [
+  {"who": "student", "say": "Sir said, write I will not talk, a hundred times!", "cap": "Sir said: write 'I will not talk' 100 times!", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "✏️", "banner": "PUNISHMENT", "bannerColor": "coral"}},
+  {"who": "teacher", "say": "A hundred times? Python does it in two lines! Meet the for loop!", "cap": "100 times? Python does it in 2 lines! Meet the for loop!",
+   "with": {"emoji": "😎", "banner": "2 LINES", "bannerColor": "jade", "word": "for"}},
+  {"who": "teacher", "say": "Level sixteen! For, and range!", "cap": "Level 16! for and range!", "scene": {"type": "level", "concepts": ["for", "range()"]}},
+  {"who": "teacher", "say": "Range three gives three numbers. The loop runs once for each!", "cap": "range(3) gives 3 numbers. The loop runs once for each!",
+   "scene": {"type": "code", "file": "lines.py", "code": ["for i in range(3):", "    print(\"Line\", i)"], "out": "Line 0\nLine 1\nLine 2"}},
+  {"who": "student", "say": "Wait, why does it start at zero?", "cap": "Wait, why does it start at 0?",
+   "with": {"marks": [{"line": 0, "from": 9, "to": 17, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Range starts at zero, and stops before the end! Want one to three? Write range one, four!", "cap": "range starts at 0 and stops BEFORE the end! Want 1 to 3? Write range(1, 4)!",
+   "scene": {"type": "code", "file": "lines.py", "code": ["for i in range(1, 4):", "    print(\"Line\", i)"], "out": "Line 1\nLine 2\nLine 3",
+             "marks": [{"line": 0, "from": 15, "to": 19, "label": "← 4 not included"}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "mango.py", "code": ["mangoes = 0", "", "for i in range(1, 4):", "    mangoes += i", "", "print(mangoes)"],
+             "options": ["10", "3", "6"], "answer": 2, "glow": [2, 3], "tags": [{"line": 2, "text": "i = 1, 2, 3", "color": "gold"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Six! One plus two plus three!", "cap": "6! 1 + 2 + 3!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Four is never included, so it's not ten!", "cap": "Yes! 4 is never included, so it's not 10!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level seventeen, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 17 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

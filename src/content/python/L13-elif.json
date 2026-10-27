@@ -1,0 +1,26 @@
+{
+ "level": 13, "of": 50, "title": "elif", "next": "Nested if",
+ "keywords": ["if", "elif", "else"],
+ "cover": {"emoji": "📝", "big": "elif", "sub": "explained with exam results"},
+ "lines": [
+  {"who": "student", "say": "Result day! Ayesha got eighty two. So what grade is that?", "cap": "Result day! Ayesha got 82. So what grade is that?", "mood": "surprised",
+   "scene": {"type": "hook", "emoji": "📝", "banner": "RESULT DAY", "bannerColor": "blue"}},
+  {"who": "teacher", "say": "A, B, or C? More than two choices! In Python, that's el if!", "cap": "A, B or C? More than two choices! In Python, that's elif!",
+   "with": {"emoji": "🎓", "banner": "A · B · C", "bannerColor": "gold", "word": "elif"}},
+  {"who": "teacher", "say": "Level thirteen! El if!", "cap": "Level 13! elif!", "scene": {"type": "level", "concepts": ["if", "elif", "else"]}},
+  {"who": "teacher", "say": "Python checks top to bottom. The first true condition wins!", "cap": "Python checks top to bottom. The first True condition wins!",
+   "scene": {"type": "code", "file": "grade.py", "code": ["marks = 82", "", "if marks >= 90:", "    print(\"A\")", "elif marks >= 80:", "    print(\"B\")", "else:", "    print(\"C\")"], "out": "B",
+             "tags": [{"line": 2, "text": "82 >= 90 ✗", "color": "red", "at": 0.4}, {"line": 4, "text": "82 >= 80 ✓", "color": "jade", "at": 0.6}]}},
+  {"who": "student", "say": "Wait, how many el ifs can I add?", "cap": "Wait, how many elifs can I add?",
+   "with": {"marks": [{"line": 4, "from": 0, "to": 4, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "As many as you want! But only one block ever runs!", "cap": "As many as you want! But only ONE block ever runs!",
+   "with": {"marks": [{"line": 4, "from": 0, "to": 4, "label": "← add many"}, {"line": 5, "from": 4, "to": 14, "label": "← only this runs", "dash": true}]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "karachi.py", "code": ["temp = 38", "", "if temp > 30:", "    print(\"Hot\")", "elif temp > 35:", "    print(\"Very hot\")", "else:", "    print(\"Nice\")"],
+             "options": ["Very hot", "Nice", "Hot"], "answer": 2, "glow": [2, 3], "dim": [4, 5, 6, 7], "tags": [{"line": 2, "text": "38 > 30 ✓", "color": "jade"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Hot! The first check is already true!", "cap": "Hot! The first check is already True!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! First true wins, so Python never even checks the el if!", "cap": "Yes! First True wins, so Python never even checks the elif!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level fourteen, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 14 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}

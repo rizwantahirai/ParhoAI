@@ -1,0 +1,27 @@
+{
+ "level": 3, "of": 50, "title": "Variables", "next": "Data types: int, float, str, bool",
+ "keywords": ["variable", "variables", "=", "score"],
+ "cover": {"emoji": "🏏", "big": "Variables", "sub": "explained with PSL scores"},
+ "lines": [
+  {"who": "student", "say": "The PSL score keeps changing! How does the screen remember it?", "cap": "The PSL score keeps changing! How does the screen remember it?", "mood": "confused",
+   "scene": {"type": "hook", "emoji": "🏏", "banner": "PSL: 150/3", "bannerColor": "jade"}},
+  {"who": "teacher", "say": "With a variable! A box with a name, holding your data!", "cap": "With a variable! A box with a name, holding your data!",
+   "with": {"word": "variable"}},
+  {"who": "teacher", "say": "Level three! Variables!", "cap": "Level 3! Variables!", "scene": {"type": "level", "concepts": ["variables", "="]}},
+  {"who": "teacher", "say": "Make a box called score. Put one fifty inside. Print it!", "cap": "Make a box called score. Put 150 inside. Print it!",
+   "scene": {"type": "code", "file": "score.py", "code": ["score = 150", "print(score)"], "out": "150"}},
+  {"who": "student", "say": "Wait, equals doesn't mean equal?", "cap": "Wait, = doesn't mean equal?",
+   "with": {"marks": [{"line": 0, "from": 6, "to": 7, "color": "coral", "blink": true, "label": "?"}]}},
+  {"who": "teacher", "say": "Not here! Equals means store. The value on the right goes into the box on the left!", "cap": "Not here! = means store. The value on the right goes into the box on the left!",
+   "with": {"marks": [{"line": 0, "from": 6, "to": 7, "label": "← store"}, {"line": 0, "from": 0, "to": 5, "dash": true}]}},
+  {"who": "teacher", "say": "Six runs! Same box, new value. The old one is gone!", "cap": "Six runs! Same box, new value. The old one is gone!",
+   "scene": {"type": "code", "file": "score.py", "code": ["score = 150", "score = 156", "print(score)"], "out": "156", "glow": [1], "dim": [0]}},
+  {"who": "teacher", "say": "Your turn! Pause, and predict! What prints?", "cap": "Your turn! Pause and predict! What prints?",
+   "scene": {"type": "quiz", "file": "quiz.py", "code": ["city = \"Lahore\"", "print(\"city\")"],
+             "options": ["Lahore", "Error", "city"], "answer": 2, "glow": [1], "tags": [{"line": 1, "text": "text, not box", "color": "red"}]}},
+  {"pause": 2.7},
+  {"who": "student", "say": "Just the word, city!", "cap": "Just the word city!", "with": {"phase": "pick"}},
+  {"who": "teacher", "say": "Yes! Quotes make it text, so Python never opens the box!", "cap": "Yes! Quotes make it text, so Python never opens the box!", "with": {"phase": "reveal"}},
+  {"who": "teacher", "say": "Comment your answer! Comment notes for the cheat sheet! Level four, tomorrow!", "cap": "Comment your answer! Comment NOTES for the cheat sheet! Level 4 tomorrow!", "scene": {"type": "cta"}}
+ ]
+}
