@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import Socials from "./Socials";
 import { WA_LINK, WA_DISPLAY, WaIcon } from "./WhatsApp";
 
 export default function Footer() {
@@ -11,6 +12,7 @@ export default function Footer() {
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
             Online applied AI engineering programs. Taught in Urdu and English, built in English, assessed on what you ship.
           </p>
+          <div className="mt-6"><Socials light /></div>
         </div>
         <div>
           <h3 className="eyebrow-l">Programs</h3>
@@ -19,6 +21,7 @@ export default function Footer() {
             <li><Link href="/bootcamp" className="hover:text-jade-bright">Bootcamp — 3 months</Link></li>
             <li><Link href="/sprints" className="hover:text-jade-bright">Sprints — 3–5 weeks</Link></li>
             <li><Link href="/instructors" className="hover:text-jade-bright">Instructors</Link></li>
+            <li><Link href="/python" className="hover:text-jade-bright">Free Python course</Link></li>
           </ul>
         </div>
         <div>

@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Credibility from "@/components/Credibility";
 import Programs from "@/components/Programs";
+import FreePython from "@/components/FreePython";
 import Difference from "@/components/Difference";
 import Builds from "@/components/Builds";
 import SprintStrip from "@/components/SprintStrip";
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Credibility />
       <Programs />
+      <FreePython />
       <Difference />
       <Builds />
       <SprintStrip />

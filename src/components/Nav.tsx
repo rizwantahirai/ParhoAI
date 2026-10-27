@@ -9,6 +9,7 @@ const LINKS = [
   { href: "/bootcamp", label: "Bootcamp", meta: "3 months · engineers" },
   { href: "/sprints",  label: "Sprints",  meta: "3–5 weeks · one subject" },
   { href: "/instructors", label: "Instructors", meta: "Who teaches, and what they ship" },
+  { href: "/python", label: "Free Python", meta: "50 levels · one a day" },
 ];
 
 export default function Nav() {
