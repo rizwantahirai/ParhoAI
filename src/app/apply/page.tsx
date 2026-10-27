@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ApplyForm from "@/components/ApplyForm";
+import { COHORT } from "@/data/pricing";
 import PageHead from "@/components/PageHead";
 import { WA_LINK, WA_DISPLAY, WaIcon } from "@/components/WhatsApp";
 
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
 export default function Apply() {
   return (
     <>
-      <PageHead kicker="Next cohort" title="Apply"
+      <PageHead kicker={`Next cohort · starts ${COHORT.startsShort}`} title="Apply"
         lede="Ten minutes. We reply within three working days, either way — including if we think a different program is the right one for you."
-        meta={[{k:"Cohort size",v:"25 max"},{k:"Reply within",v:"3 days"},{k:"Cost to apply",v:"Free"}]} />
+        meta={[{k:"Starts",v:COHORT.startsShort},{k:"Apply by",v:COHORT.applyBy.split(" ").slice(1).join(" ")},{k:"Cohort size",v:"25 max"},{k:"Reply within",v:"3 days"},{k:"Cost to apply",v:"Free"}]} />
       <section className="py-20 sm:py-28">
         <div className="wrap grid gap-12 lg:grid-cols-[1.4fr_1fr]">
           <ApplyForm />

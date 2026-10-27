@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHead from "@/components/PageHead";
+import { COHORT } from "@/data/pricing";
 import PriceTag from "@/components/PriceTag";
 import { DownloadButton, DownloadNote } from "@/components/DownloadPdf";
 import ModuleList, { Mod } from "@/components/ModuleList";
@@ -42,7 +43,7 @@ export default function Bootcamp() {
       <PageHead kicker="3 months · you already code" title="AI Engineering Bootcamp"
         lede="A conversion course, not an introduction. Fifty-two sessions from your first production-grade model to a deployed agentic system."
         price={<PriceTag program="bootcamp" dark note />}
-        meta={[{k:"Duration",v:"3 months"},{k:"Sessions",v:"52"},{k:"Contact hours",v:"78"},{k:"Modules",v:"6"},{k:"Projects",v:"5 + 1"}]}
+        meta={[{k:"Next cohort",v:COHORT.startsShort},{k:"Duration",v:"3 months"},{k:"Sessions",v:"52"},{k:"Contact hours",v:"78"},{k:"Modules",v:"6"},{k:"Projects",v:"5 + 1"}]}
         actions={<>
           <Link href="/apply" className="btn-bright">Apply for the next cohort</Link>
           <DownloadButton slug="bootcamp" />

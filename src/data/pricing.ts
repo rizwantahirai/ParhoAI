@@ -9,3 +9,6 @@ export const PRICES: Record<"diploma" | "bootcamp" | "sprints", Price> = {
 
 export const PRICE_NOTE = "Launch price for the first cohort. You pay only after you are accepted.";
 export const pkr = (n: number) => `PKR ${n.toLocaleString("en-US")}`;
+
+/** Next cohort, all programs. Update these three strings for each new intake. */
+export const COHORT = { starts: "Monday 16 November 2026", startsShort: "16 Nov", applyBy: "Thursday 12 November" };

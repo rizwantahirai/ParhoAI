@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHead from "@/components/PageHead";
+import { COHORT } from "@/data/pricing";
 import PriceTag from "@/components/PriceTag";
 import { DownloadButton, DownloadNote } from "@/components/DownloadPdf";
 import CtaBand from "@/components/CtaBand";
@@ -48,7 +49,7 @@ export default function Sprints() {
       <PageHead kicker="3–5 weeks · one subject" title="Sprints"
         lede="Short, focused courses for working engineers. Take the one you need, not the eight months around it. Together the seven are the three-month bootcamp."
         price={<PriceTag program="sprints" dark note />}
-        meta={[{k:"Sprints",v:"7"},{k:"Hours each",v:"9–15"},{k:"Weeks each",v:"3–5"},{k:"Projects",v:"1 each"}]}
+        meta={[{k:"Next cohort",v:COHORT.startsShort},{k:"Sprints",v:"7"},{k:"Hours each",v:"9–15"},{k:"Weeks each",v:"3–5"},{k:"Projects",v:"1 each"}]}
         actions={<>
           <Link href="/apply" className="btn-bright">Apply for the next cohort</Link>
           <DownloadButton slug="sprints" />

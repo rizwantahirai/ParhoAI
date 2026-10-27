@@ -1,3 +1,4 @@
+import { COHORT } from "@/data/pricing";
 import Link from "next/link";
 import { WA_LINK, WaIcon } from "./WhatsApp";
 
@@ -7,7 +8,8 @@ export default function CtaBand() {
       <div aria-hidden className="pointer-events-none absolute -right-32 -top-32 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle,rgba(61,212,171,0.22),transparent_70%)]" />
       <div className="wrap relative flex flex-col items-start gap-8 lg:flex-row lg:items-center lg:justify-between">
         <div>
-          <h2 className="h2 max-w-[18ch] text-white">Next cohort starts soon. Places are limited to 25.</h2>
+          <h2 className="h2 max-w-[20ch] text-white">Next cohort starts {COHORT.starts}. Places are limited to 25.</h2>
+          <p className="mt-3 font-mono text-xs uppercase tracking-[0.1em] text-jade-bright">Apply by {COHORT.applyBy}</p>
           <p className="lede mt-4 max-w-[48ch] text-white/70">
             Applications take ten minutes. We reply within three working days, either way — or just message us on WhatsApp.
           </p>
