@@ -11,4 +11,4 @@ export const PRICE_NOTE = "Launch price for the first cohort. You pay only after
 export const pkr = (n: number) => `PKR ${n.toLocaleString("en-US")}`;
 
 /** Next cohort, all programs. Update these three strings for each new intake. */
-export const COHORT = { starts: "Monday 16 November 2026", startsShort: "16 Nov", applyBy: "Thursday 12 November" };
+export const COHORT = { starts: "Monday 7 December 2026", startsShort: "7 Dec", applyBy: "Sunday 6 December" };
