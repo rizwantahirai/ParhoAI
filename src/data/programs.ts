@@ -88,7 +88,7 @@ export const INSTRUCTORS: Instructor[] = [
     slug: "rizwan-tahir", name: "Rizwan Tahir", role: "Founder · Machine Learning",
     teaches: ["Machine learning", "Agentic AI", "MLOps"],
     exp: "6 years · ML & Data Science", prev: "VSBLTY · RootBlock Labs",
-    edu: "University of Bradford, UK",
+    edu: "MS Computing & Data Science, UMT · BEng (Hons), University of Bradford, UK",
     bio: "Runs the machine-learning side — data pipelines, agentic AI and MLOps. Six years building and shipping computer-vision products at companies selling into that market.",
     linkedin: "https://www.linkedin.com/in/rizwanxfd/",
   },

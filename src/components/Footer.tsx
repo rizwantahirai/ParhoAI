@@ -33,7 +33,7 @@ export default function Footer() {
                 <WaIcon size={15} /> {WA_DISPLAY}
               </a>
             </li>
-            <li><a href="mailto:hello@parhoai.org" className="hover:text-jade-bright">hello@parhoai.org</a></li>
+            <li><a href="mailto:rizwan@parhoai.org" className="hover:text-jade-bright">rizwan@parhoai.org</a></li>
           </ul>
         </div>
       </div>

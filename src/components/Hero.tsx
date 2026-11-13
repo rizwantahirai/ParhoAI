@@ -21,6 +21,10 @@ export default function Hero() {
           Not tutorials. Programs where every module ends in a project that ships to
           your GitHub — from zero computer science, or in three months if you already code.
         </p>
+        <p className="mt-5 max-w-[52ch] animate-rise border-l-2 border-jade-bright pl-4 text-white/85 [animation-delay:150ms]">
+          Taught by engineers who studied AI and computer science at university, up to master&rsquo;s
+          level, and build AI systems in industry every day.
+        </p>
         <div className="mt-11 flex animate-rise flex-col gap-3 sm:flex-row [animation-delay:180ms]">
           <Link href="/apply" className="btn-bright">Apply for the next cohort</Link>
           <Link href="#programs" className="btn-ghost-dark">Compare the three paths</Link>

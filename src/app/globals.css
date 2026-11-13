@@ -35,3 +35,6 @@
   .sect { @apply py-24 sm:py-32; }
   .rule { @apply border-t border-line; }
 }
+
+/* visitors who turn off motion see the content at once */
+@media (prefers-reduced-motion: reduce) { .animate-rise { animation: none !important; } }
