@@ -6,6 +6,7 @@ const ICON: Record<string, JSX.Element> = {
   Facebook:  <span className="font-bold leading-none">f</span>,
   LinkedIn:  <span className="font-bold leading-none">in</span>,
   TikTok:    <span className="font-bold leading-none">♪</span>,
+  Snapchat:  <span className="font-bold leading-none">👻</span>,
   X:         <span className="font-bold leading-none">𝕏</span>,
 };
 
