@@ -79,7 +79,10 @@ export default function InstructorCarousel({ people }: { people: Instructor[] })
                     {[["Experience", p.exp], ["Previously", p.prev], ["Education", p.edu]].map(([k, v]) => (
                       <div key={k}>
                         <dt className="font-mono text-[10px] font-semibold uppercase tracking-[0.13em] text-slateink-light">{k}</dt>
-                        <dd className="mt-1.5 text-[14px] leading-snug text-slateink">{v}</dd>
+                        {/* one item per line: "VSBLTY · RootBlock Labs" reads as two clean lines */}
+                        <dd className="mt-1.5 space-y-1 text-[14px] leading-snug text-slateink">
+                          {v.split(" · ").map(item => <span key={item} className="block">{item}</span>)}
+                        </dd>
                       </div>
                     ))}
                   </dl>
