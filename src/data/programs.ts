@@ -98,6 +98,7 @@ export const INSTRUCTORS: Instructor[] = [
     exp: "9 years · Computer Vision & AI", prev: "HAZEN · RootBlock Labs · VSBLTY",
     edu: "University of Bradford, UK",
     bio: "Nine years building computer-vision and AI systems in production. Teaches the detection, tracking and edge-deployment modules — the parts most courses skip.",
+    linkedin: "https://www.linkedin.com/in/mhamjad0/",
   },
   {
     slug: "mansoor-baig", name: "Mansoor Baig", role: "AI Pipeline Engineer · LLMs",
@@ -105,6 +106,7 @@ export const INSTRUCTORS: Instructor[] = [
     exp: "AI pipelines · LLMs · Hardware", prev: "VSBLTY",
     edu: "MS, LUMS",
     bio: "Builds AI pipelines and LLM systems, and is the team's go-to for hardware. Teaches the LLM and pipeline sessions, and how to pick and use the right GPU or device for a model.",
+    linkedin: "https://www.linkedin.com/in/mansoor244/",
   },
   {
     slug: "talha", name: "Talha", role: "Co-founder · Engineering",
