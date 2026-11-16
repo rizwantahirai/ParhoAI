@@ -90,7 +90,7 @@ export const INSTRUCTORS: Instructor[] = [
     exp: "6 years · ML & Data Science", prev: "VSBLTY · RootBlock Labs",
     edu: "MS Computing & Data Science, UMT · BEng (Hons), University of Bradford, UK",
     bio: "Runs the machine-learning side — data pipelines, agentic AI and MLOps. Six years building and shipping computer-vision products at companies selling into that market.",
-    linkedin: "https://www.linkedin.com/in/rizwanxfd/",
+    linkedin: "https://www.linkedin.com/in/rizwanbuilds/",
   },
   {
     slug: "hasnain-amjad", name: "Hasnain Amjad", role: "Co-founder · Computer Vision",
