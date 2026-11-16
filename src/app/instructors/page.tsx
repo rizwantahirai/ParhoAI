@@ -14,8 +14,8 @@ export default function Instructors() {
   return (
     <>
       <PageHead kicker="Who teaches" title="Instructors"
-        lede="Practising engineers, not career trainers. Thirty-three years between them of computer vision, machine learning and production systems that other people depend on."
-        meta={[{k:"Instructors",v:"5"},{k:"Years combined",v:"33+"},{k:"Cohort size",v:"25 max"}]} />
+        lede="Practising engineers, not career trainers. More than thirty-three years between them of computer vision, machine learning and production systems that other people depend on."
+        meta={[{k:"Instructors",v:"6"},{k:"Years combined",v:"33+"},{k:"Cohort size",v:"25 max"}]} />
 
       <section className="py-20 sm:py-28">
         <div className="wrap">

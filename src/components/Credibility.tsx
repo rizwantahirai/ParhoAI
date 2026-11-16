@@ -1,5 +1,5 @@
 const FROM = ["VSBLTY", "RootBlock Labs", "HAZEN", "JinnByte", "DocNow EHR", "BRICKandMORTAR.ai"];
-const EDU  = ["University of Bradford, UK", "UMT Lahore", "FAST NUCES", "University of the Punjab", "GC University Faisalabad"];
+const EDU  = ["University of Bradford, UK", "LUMS", "UMT Lahore", "FAST NUCES", "University of the Punjab", "GC University Faisalabad"];
 
 export default function Credibility() {
   return (
@@ -9,7 +9,7 @@ export default function Credibility() {
           Studied at university. Proven in industry.
         </h2>
         <p className="mx-auto mt-3 max-w-[60ch] text-center text-slateink">
-          Your instructors hold engineering and computer-science degrees, two of them at master&rsquo;s level,
+          Your instructors hold engineering and computer-science degrees, three of them at master&rsquo;s level,
           and ship AI and software for real companies. You learn the theory from people who studied it and the
           practice from people who do it.
         </p>

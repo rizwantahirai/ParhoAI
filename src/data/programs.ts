@@ -100,6 +100,13 @@ export const INSTRUCTORS: Instructor[] = [
     bio: "Nine years building computer-vision and AI systems in production. Teaches the detection, tracking and edge-deployment modules — the parts most courses skip.",
   },
   {
+    slug: "mansoor-baig", name: "Mansoor Baig", role: "AI Pipeline Engineer · LLMs",
+    teaches: ["AI pipelines", "LLMs", "AI hardware"],
+    exp: "AI pipelines · LLMs · Hardware", prev: "VSBLTY",
+    edu: "MS, LUMS",
+    bio: "Builds AI pipelines and LLM systems, and is the team's go-to for hardware. Teaches the LLM and pipeline sessions, and how to pick and use the right GPU or device for a model.",
+  },
+  {
     slug: "talha", name: "Talha", role: "Co-founder · Engineering",
     teaches: ["Software engineering", "Delivery"],
     exp: "7.5 years · Software engineering",
