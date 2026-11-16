@@ -6,7 +6,7 @@ export const SOCIAL: { name: string; url: string; handle: string }[] = [
   { name: "Instagram", url: "https://www.instagram.com/parhoaiorg/", handle: "@parhoaiorg" },
   { name: "TikTok",    url: "", handle: "" },
   { name: "YouTube",   url: "", handle: "" },
-  { name: "Facebook",  url: "", handle: "" },
+  { name: "Facebook",  url: "https://www.facebook.com/parhoaiorg", handle: "parhoaiorg" },
   { name: "LinkedIn",  url: "https://www.linkedin.com/company/parhoaiorg/", handle: "parhoaiorg" },
   { name: "Snapchat",  url: "https://www.snapchat.com/add/parhoai.org", handle: "parhoai.org" },
   { name: "X",         url: "", handle: "" },
